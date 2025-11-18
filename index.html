@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard CES – Opiniones Clientes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- TailwindCSS CDN para estilos rápidos -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Chart.js CDN para gráficas -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    /* Scroll suave en tabla */
+    .tabla-scroll {
+      max-height: 380px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body class="bg-slate-100 min-h-screen">
+
+  <!-- Contenedor principal -->
+  <div class="max-w-7xl mx-auto px-4 py-6">
+    <!-- Header -->
+    <header class="mb-6">
+      <h1 class="text-3xl font-bold text-slate-800">
+        Dashboard CES – Voz del Cliente
+      </h1>
+      <p class="text-slate-600 mt-1">
+        Resumen ejecutivo de comentarios de clientes en línea.
+      </p>
+      <p id="dateRangeLabel" class="text-slate-500 text-sm mt-1">
+        Cargando rango de fechas...
+      </p>
+    </header>
+
+    <!-- Filtros -->
+    <section class="bg-white rounded-xl shadow p-4 mb-6">
+      <h2 class="text-lg font-semibold text-slate-800 mb-3">
+        Filtros
+      </h2>
+      <div class="grid gap-4 md:grid-cols-4">
+        <!-- Filtro por tema (name) -->
+        <div>
+          <label class="block text-sm font-medium text-slate-700 mb-1">
+            Tema CES
+          </label>
+          <select id="filterTema" class="w-full border rounded-lg px-3 py-2 text-sm">
+            <option value="all">Todos</option>
+          </select>
+        </div>
+
+        <!-- Filtro por fecha inicial -->
+        <div>
+          <label class="block text-sm font-medium text-slate-700 mb-1">
+            Fecha desde
+          </label>
+          <input
+            type="date"
+            id="filterFechaDesde"
+            class="w-full border rounded-lg px-3 py-2 text-sm"
+          />
+        </div>
+
+        <!-- Filtro por fecha final -->
+        <div>
+          <label class="block text-sm font-medium text-slate-700 mb-1">
+            Fecha hasta
+          </label>
+          <input
+            type="date"
+            id="filterFechaHasta"
+            class="w-full border rounded-lg px-3 py-2 text-sm"
+          />
+        </div>
+
+        <!-- Búsqueda de texto -->
+        <div>
+          <label class="block text-sm font-medium text-slate-700 mb-1">
+            Buscar (correo, pedido, comentario)
+          </label>
+          <input
+            type="text"
+            id="filterSearch"
+            placeholder="Ej. pago, lento, monedero..."
+            class="w-full border rounded-lg px-3 py-2 text-sm"
+          />
+        </div>
+      </div>
+
+      <div class="mt-3 flex gap-2 justify-end">
+        <button
+          id="btnLimpiar"
+          class="px-4 py-2 text-sm rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-50"
+        >
+          Limpiar filtros
+        </button>
+      </div>
+    </section>
+
+    <!-- KPIs -->
+    <section class="grid gap-4 md:grid-cols-4 mb-6">
+      <div class="bg-white rounded-xl shadow p-4">
+        <p class="text-xs font-semibold text-slate-500 uppercase">
+          Respuestas totales
+        </p>
+        <p id="kpiTotalRespuestas" class="text-2xl font-bold mt-2 text-slate-800">
+          –
+        </p>
+        <p class="text-xs text-slate-500 mt-1">
+          Número de encuestas recibidas en el periodo.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-4">
+        <p class="text-xs font-semibold text-slate-500 uppercase">
+          Clientes únicos
+        </p>
+        <p id="kpiClientesUnicos" class="text-2xl font-bold mt-2 text-slate-800">
+          –
+        </p>
+        <p class="text-xs text-slate-500 mt-1">
+          Correos distintos que han dado su opinión.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-4">
+        <p class="text-xs font-semibold text-slate-500 uppercase">
+          Comentarios con texto
+        </p>
+        <p id="kpiConComentarios" class="text-2xl font-bold mt-2 text-slate-800">
+          –
+        </p>
+        <p class="text-xs text-slate-500 mt-1">
+          Respuestas donde el cliente escribió algún comentario.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-4">
+        <p class="text-xs font-semibold text-slate-500 uppercase">
+          Temas CES
+        </p>
+        <p id="kpiTemas" class="text-2xl font-bold mt-2 text-slate-800">
+          –
+        </p>
+        <p class="text-xs text-slate-500 mt-1">
+          Cantidad de temas distintos donde se concentran las mejoras.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gráficas -->
+    <section class="grid gap-4 lg:grid-cols-2 mb-6">
+      <!-- Gráfica 1: Respuestas por tema -->
+      <div class="bg-white rounded-xl shadow p-4">
+        <h2 class="text-sm font-semibold text-slate-800 mb-1">
+          Distribución de respuestas por tema CES
+        </h2>
+        <p class="text-xs text-slate-500 mb-3">
+          Muestra en qué temas se concentran más comentarios de los clientes.
+        </p>
+        <canvas id="chartPorTema" height="200"></canvas>
+      </div>
+
+      <!-- Gráfica 2: Respuestas por día -->
+      <div class="bg-white rounded-xl shadow p-4">
+        <h2 class="text-sm font-semibold text-slate-800 mb-1">
+          Evolución de respuestas por día
+        </h2>
+        <p class="text-xs text-slate-500 mb-3">
+          Permite ver si hay picos de comentarios en días específicos.
+        </p>
+        <canvas id="chartPorFecha" height="200"></canvas>
+      </div>
+    </section>
+
+    <!-- Gráfica 3: % con comentario vs sin comentario -->
+    <section class="bg-white rounded-xl shadow p-4 mb-6">
+      <h2 class="text-sm font-semibold text-slate-800 mb-1">
+        Comentarios escritos vs. vacíos
+      </h2>
+      <p class="text-xs text-slate-500 mb-3">
+        Proporción de clientes que dejaron un comentario escrito.
+      </p>
+      <div class="max-w-md mx-auto">
+        <canvas id="chartComentarios" height="200"></canvas>
+      </div>
+    </section>
+
+    <!-- Tabla de detalle -->
+    <section class="bg-white rounded-xl shadow p-4">
+      <div class="flex items-center justify-between mb-3">
+        <div>
+          <h2 class="text-sm font-semibold text-slate-800">
+            Detalle de respuestas
+          </h2>
+          <p class="text-xs text-slate-500">
+            Cada fila corresponde a un pedido evaluado por el cliente.
+          </p>
+        </div>
+        <p id="labelResultados" class="text-xs text-slate-500">
+          Mostrando 0 resultados
+        </p>
+      </div>
+
+      <div class="tabla-scroll border rounded-xl">
+        <table class="min-w-full text-xs">
+          <thead class="bg-slate-50 sticky top-0">
+            <tr>
+              <th class="px-3 py-2 text-left font-semibold text-slate-600">
+                Fecha
+              </th>
+              <th class="px-3 py-2 text-left font-semibold text-slate-600">
+                Tema CES
+              </th>
+              <th class="px-3 py-2 text-left font-semibold text-slate-600">
+                Pedido
+              </th>
+              <th class="px-3 py-2 text-left font-semibold text-slate-600">
+                Correo
+              </th>
+              <th class="px-3 py-2 text-left font-semibold text-slate-600">
+                Comentarios del cliente
+              </th>
+            </tr>
+          </thead>
+          <tbody id="tablaBody" class="divide-y divide-slate-100 bg-white">
+            <!-- Filas dinámicas -->
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-[11px] text-slate-400 mt-2">
+        Nota: la información se actualiza al aplicar los filtros superiores
+        (tema, fechas y búsqueda).
+      </p>
+    </section>
+  </div>
+
+  <script>
+    // Ruta del archivo JSON (debe estar al mismo nivel que este index.html)
+    const JSON_PATH = 'ReporteCES-2025-11-09.json';
+
+    let rawData = [];
+    let filteredData = [];
+    let chartPorTema, chartPorFecha, chartComentarios;
+
+    // Utilidades
+    function parseFecha(fechaStr) {
+      return new Date(fechaStr);
+    }
+
+    function formatFecha(fechaStr) {
+      const d = parseFecha(fechaStr);
+      if (isNaN(d)) return fechaStr;
+      const day = String(d.getDate()).padStart(2, '0');
+      const month = String(d.getMonth() + 1).padStart(2, '0');
+      const year = d.getFullYear();
+      const hours = String(d.getHours()).padStart(2, '0');
+      const mins = String(d.getMinutes()).padStart(2, '0');
+      return `${day}/${month}/${year} ${hours}:${mins}`;
+    }
+
+    function formatFechaSoloDia(fechaStr) {
+      const d = parseFecha(fechaStr);
+      if (isNaN(d)) return fechaStr;
+      const day = String(d.getDate()).padStart(2, '0');
+      const month = String(d.getMonth() + 1).padStart(2, '0');
+      const year = d.getFullYear();
+      return `${year}-${month}-${day}`;
+    }
+
+    function obtenerRangoFechas(data) {
+      if (!data.length) return null;
+      let min = parseFecha(data[0].fecha);
+      let max = parseFecha(data[0].fecha);
+      data.forEach(r => {
+        const d = parseFecha(r.fecha);
+        if (d < min) min = d;
+        if (d > max) max = d;
+      });
+      return { min, max };
+    }
+
+    // Cargar JSON
+    async function cargarDatos() {
+      try {
+        const resp = await fetch(JSON_PATH);
+        const json = await resp.json();
+
+        // El archivo viene como { "query sql": [ ... ] }
+        const key = Object.keys(json)[0];
+        rawData = json[key] || [];
+
+        inicializarDashboard();
+      } catch (err) {
+        console.error('Error cargando JSON', err);
+        alert('No se pudo cargar el archivo de datos. Verifique que el JSON esté en la misma carpeta que el HTML.');
+      }
+    }
+
+    function inicializarDashboard() {
+      // Filtros iniciales
+      const temas = [...new Set(rawData.map(r => r.name))].sort();
+      const selectTema = document.getElementById('filterTema');
+      temas.forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t;
+        opt.textContent = t;
+        selectTema.appendChild(opt);
+      });
+
+      // Rango de fechas
+      const rango = obtenerRangoFechas(rawData);
+      if (rango) {
+        const fechaDesdeInput = document.getElementById('filterFechaDesde');
+        const fechaHastaInput = document.getElementById('filterFechaHasta');
+
+        const minISO = rango.min.toISOString().slice(0, 10);
+        const maxISO = rango.max.toISOString().slice(0, 10);
+
+        fechaDesdeInput.min = minISO;
+        fechaDesdeInput.max = maxISO;
+        fechaHastaInput.min = minISO;
+        fechaHastaInput.max = maxISO;
+
+        fechaDesdeInput.value = minISO;
+        fechaHastaInput.value = maxISO;
+
+        const dateRangeLabel = document.getElementById('dateRangeLabel');
+        dateRangeLabel.textContent = `Información desde ${minISO} hasta ${maxISO}.`;
+      }
+
+      // Event listeners de filtros
+      document.getElementById('filterTema').addEventListener('change', aplicarFiltros);
+      document.getElementById('filterFechaDesde').addEventListener('change', aplicarFiltros);
+      document.getElementById('filterFechaHasta').addEventListener('change', aplicarFiltros);
+      document.getElementById('filterSearch').addEventListener('input', aplicarFiltros);
+      document.getElementById('btnLimpiar').addEventListener('click', limpiarFiltros);
+
+      // Crear gráficas vacías
+      inicializarGraficas();
+
+      // Primer filtrado
+      aplicarFiltros();
+    }
+
+    function limpiarFiltros() {
+      document.getElementById('filterTema').value = 'all';
+
+      const rango = obtenerRangoFechas(rawData);
+      if (rango) {
+        const minISO = rango.min.toISOString().slice(0, 10);
+        const maxISO = rango.max.toISOString().slice(0, 10);
+        document.getElementById('filterFechaDesde').value = minISO;
+        document.getElementById('filterFechaHasta').value = maxISO;
+      } else {
+        document.getElementById('filterFechaDesde').value = '';
+        document.getElementById('filterFechaHasta').value = '';
+      }
+
+      document.getElementById('filterSearch').value = '';
+      aplicarFiltros();
+    }
+
+    function aplicarFiltros() {
+      const tema = document.getElementById('filterTema').value;
+      const fechaDesde = document.getElementById('filterFechaDesde').value;
+      const fechaHasta = document.getElementById('filterFechaHasta').value;
+      const search = document.getElementById('filterSearch').value.toLowerCase().trim();
+
+      filteredData = rawData.filter(r => {
+        // Filtro tema
+        if (tema !== 'all' && r.name !== tema) return false;
+
+        // Filtro fechas
+        const d = parseFecha(r.fecha);
+        if (fechaDesde) {
+          const dDesde = new Date(fechaDesde + 'T00:00:00');
+          if (d < dDesde) return false;
+        }
+        if (fechaHasta) {
+          const dHasta = new Date(fechaHasta + 'T23:59:59');
+          if (d > dHasta) return false;
+        }
+
+        // Filtro búsqueda
+        if (search) {
+          const texto = (r.correo + ' ' + r.pedido + ' ' + (r.comentarios || '')).toLowerCase();
+          if (!texto.includes(search)) return false;
+        }
+
+        return true;
+      });
+
+      actualizarKPIs();
+      actualizarTabla();
+      actualizarGraficas();
+    }
+
+    function actualizarKPIs() {
+      const total = filteredData.length;
+      const clientes = new Set(filteredData.map(r => r.correo)).size;
+      const conComentarios = filteredData.filter(r => (r.comentarios || '').trim().length > 0).length;
+      const temas = new Set(filteredData.map(r => r.name)).size;
+
+      document.getElementById('kpiTotalRespuestas').textContent = total;
+      document.getElementById('kpiClientesUnicos').textContent = clientes;
+      document.getElementById('kpiConComentarios').textContent = `${conComentarios} (${total ? Math.round(conComentarios * 100 / total) : 0}%)`;
+      document.getElementById('kpiTemas').textContent = temas;
+
+      document.getElementById('labelResultados').textContent = `Mostrando ${total} resultados`;
+    }
+
+    function actualizarTabla() {
+      const tbody = document.getElementById('tablaBody');
+      tbody.innerHTML = '';
+
+      if (!filteredData.length) {
+        const tr = document.createElement('tr');
+        const td = document.createElement('td');
+        td.colSpan = 5;
+        td.className = 'px-3 py-3 text-center text-slate-500 text-sm';
+        td.textContent = 'No hay registros para los filtros seleccionados.';
+        tr.appendChild(td);
+        tbody.appendChild(tr);
+        return;
+      }
+
+      filteredData.forEach(r => {
+        const tr = document.createElement('tr');
+
+        const tdFecha = document.createElement('td');
+        tdFecha.className = 'px-3 py-2 align-top text-slate-700';
+        tdFecha.textContent = formatFecha(r.fecha);
+
+        const tdTema = document.createElement('td');
+        tdTema.className = 'px-3 py-2 align-top text-slate-700 text-xs';
+        tdTema.textContent = r.name;
+
+        const tdPedido = document.createElement('td');
+        tdPedido.className = 'px-3 py-2 align-top text-slate-700';
+        tdPedido.textContent = r.pedido;
+
+        const tdCorreo = document.createElement('td');
+        tdCorreo.className = 'px-3 py-2 align-top text-slate-700';
+        tdCorreo.textContent = r.correo;
+
+        const tdComentarios = document.createElement('td');
+        tdComentarios.className = 'px-3 py-2 align-top text-slate-700 text-xs';
+        tdComentarios.textContent = r.comentarios && r.comentarios.trim().length
+          ? r.comentarios
+          : '—';
+
+        tr.appendChild(tdFecha);
+        tr.appendChild(tdTema);
+        tr.appendChild(tdPedido);
+        tr.appendChild(tdCorreo);
+        tr.appendChild(tdComentarios);
+
+        tbody.appendChild(tr);
+      });
+    }
+
+    // Inicializar gráficas vacías
+    function inicializarGraficas() {
+      const ctxTema = document.getElementById('chartPorTema').getContext('2d');
+      const ctxFecha = document.getElementById('chartPorFecha').getContext('2d');
+      const ctxComentarios = document.getElementById('chartComentarios').getContext('2d');
+
+      chartPorTema = new Chart(ctxTema, {
+        type: 'bar',
+        data: {
+          labels: [],
+          datasets: [{
+            label: 'Respuestas',
+            data: []
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => ` ${ctx.parsed.y} respuestas`
+              }
+            }
+          },
+          scales: {
+            x: {
+              ticks: { font: { size: 10 } }
+            },
+            y: {
+              beginAtZero: true,
+              title: {
+                display: true,
+                text: 'Número de respuestas'
+              }
+            }
+          }
+        }
+      });
+
+      chartPorFecha = new Chart(ctxFecha, {
+        type: 'line',
+        data: {
+          labels: [],
+          datasets: [{
+            label: 'Respuestas por día',
+            data: [],
+            tension: 0.3
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              title: {
+                display: true,
+                text: 'Número de respuestas'
+              }
+            }
+          }
+        }
+      });
+
+      chartComentarios = new Chart(ctxComentarios, {
+        type: 'doughnut',
+        data: {
+          labels: ['Con comentario', 'Sin comentario'],
+          datasets: [{
+            data: [0, 0]
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }
+      });
+    }
+
+    function actualizarGraficas() {
+      // Gráfica por tema
+      const conteoTemas = {};
+      filteredData.forEach(r => {
+        conteoTemas[r.name] = (conteoTemas[r.name] || 0) + 1;
+      });
+      const temas = Object.keys(conteoTemas).sort();
+      const valoresTemas = temas.map(t => conteoTemas[t]);
+
+      chartPorTema.data.labels = temas;
+      chartPorTema.data.datasets[0].data = valoresTemas;
+      chartPorTema.update();
+
+      // Gráfica por fecha (por día)
+      const conteoFechas = {};
+      filteredData.forEach(r => {
+        const dia = formatFechaSoloDia(r.fecha);
+        conteoFechas[dia] = (conteoFechas[dia] || 0) + 1;
+      });
+      const dias = Object.keys(conteoFechas).sort();
+      const valoresDias = dias.map(d => conteoFechas[d]);
+
+      chartPorFecha.data.labels = dias;
+      chartPorFecha.data.datasets[0].data = valoresDias;
+      chartPorFecha.update();
+
+      // Gráfica de comentarios vs sin comentario
+      const total = filteredData.length;
+      const conComentarios = filteredData.filter(r => (r.comentarios || '').trim().length > 0).length;
+      const sinComentarios = total - conComentarios;
+
+      chartComentarios.data.datasets[0].data = [conComentarios, sinComentarios];
+      chartComentarios.update();
+    }
+
+    // Iniciar
+    cargarDatos();
+  </script>
+</body>
+</html>
