@@ -1,33 +1,5 @@
 {
-"select cp.correo ,cp.pedido ,cp.fecha ,cp.comentarios ,cc.name  from CHAZFUNCTIONSPR.appch.CALIFICACION_PEDIDO cp\r\ninner join CHAZFUNCTIONSPR.appch.CATALOG_CES cc on cc.id in (  SELECT value FROM STRING_SPLIT(cp.mejoras , ',')  )\r\nwhere CAST(fecha AS date) > '2025-11-09'": [
-	{
-		"correo" : "laura_bf@yahoo.com",
-		"pedido" : "1575349041799-01",
-		"fecha" : "2025-11-10T22:02:33.570Z",
-		"comentarios" : "Agradecería que no se muestren los artículos que están agotados, al momento de la busqueda de los productos.",
-		"name" : "Encontrar mi dirección o tienda"
-	},
-	{
-		"correo" : "jahnke7206@gmail.com",
-		"pedido" : "1575349041655-01",
-		"fecha" : "2025-11-10T22:43:39.927Z",
-		"comentarios" : "Muy mal servicio",
-		"name" : "Encontrar mi dirección o tienda"
-	},
-	{
-		"correo" : "rosycancun77@gmail.com",
-		"pedido" : "1575399043921-01",
-		"fecha" : "2025-11-11T02:41:08.443Z",
-		"comentarios" : "Me gustaría y ayudaría mucho que tengan más disponibilidad de entrega a domicilio, eso es ofrecer un buen servicio de compra en línea porque tengo que recogerlo en la tienda más alejada de mi casa, cuando hay una tienda a 800 metros de mi casa.",
-		"name" : "Encontrar mi dirección o tienda"
-	},
-	{
-		"correo" : "amendozag_76@hotmail.com",
-		"pedido" : "1575429045898-01",
-		"fecha" : "2025-11-11T05:55:50.670Z",
-		"comentarios" : "Tardé más buscando los productos en línea que en la tienda física",
-		"name" : "Encontrar mi dirección o tienda"
-	},
+"select cp.correo ,cp.pedido ,cp.fecha ,cp.comentarios ,cc.name  from CHAZFUNCTIONSPR.appch.CALIFICACION_PEDIDO cp\r\ninner join CHAZFUNCTIONSPR.appch.CATALOG_CES cc on cc.id in (  SELECT value FROM STRING_SPLIT(cp.mejoras , ',')  )\r\nwhere CAST(fecha AS date) < '2025-11-18' and CAST(fecha AS date) > '2025-11-10' ": [
 	{
 		"correo" : "dorisgonzalez.vivarea@gmail.com",
 		"pedido" : "1575519047355-01",
@@ -127,74 +99,312 @@
 		"name" : "Encontrar mi dirección o tienda"
 	},
 	{
-		"correo" : "insumoslvog@gmail.com",
-		"pedido" : "1575199037179-01",
-		"fecha" : "2025-11-10T06:57:54.357Z",
-		"comentarios" : "La primera vez comprando en la sucursal en linea resulto fantástico,  pero en las ultimas 5 compras hay demasiados faltantes y desearíamos que no siga ocurriendo ya que tenemos preferencia por supermercado.",
-		"name" : "Búsqueda de productos"
+		"correo" : "alanesph@gmail.com",
+		"pedido" : "1575899065425-01",
+		"fecha" : "2025-11-13T05:05:19.147Z",
+		"comentarios" : "Es dificil interactuar en la pagina. Tambien te ofrecen una promoción bastante buena y no puedes pagar, no sirve el sistema.. Promoción engañosa.",
+		"name" : "Encontrar mi dirección o tienda"
 	},
 	{
-		"correo" : "micuentajonathan1@gmail.com",
-		"pedido" : "1575299038915-01",
-		"fecha" : "2025-11-10T16:39:15.573Z",
-		"comentarios" : "Debería entregar más rápido los artículos...tardan mucho ",
-		"name" : "Búsqueda de productos"
-	},
-	{
-		"correo" : "svaldescortina@gmail.com",
-		"pedido" : "1575299038943-01",
-		"fecha" : "2025-11-10T16:40:26.317Z",
+		"correo" : "diegpe96@gmail.com",
+		"pedido" : "1575909065658-01",
+		"fecha" : "2025-11-13T05:31:00.890Z",
 		"comentarios" : "",
-		"name" : "Búsqueda de productos"
+		"name" : "Encontrar mi dirección o tienda"
 	},
 	{
-		"correo" : "ferniarana@gmail.com",
-		"pedido" : "1575329040666-01",
-		"fecha" : "2025-11-10T19:47:26.167Z",
-		"comentarios" : "Espero que esta ocasión no me cancelen la compra, ya que me la han cancelado 2 veces que por falta de stock, a pesar de que el producto aparece disponible",
-		"name" : "Búsqueda de productos"
+		"correo" : "ceciboby@yahoo.com.mx",
+		"pedido" : "1576029070080-01",
+		"fecha" : "2025-11-13T17:36:11.363Z",
+		"comentarios" : "Las opciones de productos no se ven bien, no encontre la forma de ir más abajo.",
+		"name" : "Encontrar mi dirección o tienda"
 	},
 	{
-		"correo" : "xe1gq@yahoo.com.mx",
-		"pedido" : "1575339041081-01",
-		"fecha" : "2025-11-10T20:47:08.550Z",
-		"comentarios" : "Complicado para personas de la 3a. edad  o poco versadas en la computadora",
-		"name" : "Búsqueda de productos"
+		"correo" : "earguelles2012@gmail.com",
+		"pedido" : "1576079073379-01",
+		"fecha" : "2025-11-13T22:33:09.467Z",
+		"comentarios" : "Es súper lento y cada paso esperando que cargue la página es doloroso. El App es peor y casi nunca funciona ",
+		"name" : "Encontrar mi dirección o tienda"
 	},
 	{
-		"correo" : "laura_bf@yahoo.com",
-		"pedido" : "1575349041799-01",
-		"fecha" : "2025-11-10T22:02:33.570Z",
-		"comentarios" : "Agradecería que no se muestren los artículos que están agotados, al momento de la busqueda de los productos.",
-		"name" : "Búsqueda de productos"
+		"correo" : "natytisvg@gmail.com",
+		"pedido" : "1576249086391-01",
+		"fecha" : "2025-11-14T16:26:59.733Z",
+		"comentarios" : "AUN ME SIGUE DANDO PROBLEMAS LA WEB  YA QUE NO ME DEJA SELECCIONAR MAS DE 1 PRODUCTO DE JUGO ADES DE 200 ML. ",
+		"name" : "Encontrar mi dirección o tienda"
 	},
 	{
-		"correo" : "sanvalbre15@gmail.com",
-		"pedido" : "1575349041857-01",
-		"fecha" : "2025-11-10T22:09:26.000Z",
-		"comentarios" : "Falta mas disponibilidad de productos ",
-		"name" : "Búsqueda de productos"
+		"correo" : "rnc_988@hotmail.com",
+		"pedido" : "1576269089602-01",
+		"fecha" : "2025-11-14T18:22:23.057Z",
+		"comentarios" : "se me hizo difícil poner la dirección ya que en mis datos no lo incluyen",
+		"name" : "Encontrar mi dirección o tienda"
 	},
 	{
-		"correo" : "jahnke7206@gmail.com",
-		"pedido" : "1575349041655-01",
-		"fecha" : "2025-11-10T22:43:39.927Z",
-		"comentarios" : "Muy mal servicio",
-		"name" : "Búsqueda de productos"
+		"correo" : "gerencia@epicapadel.mx",
+		"pedido" : "1576299092909-01",
+		"fecha" : "2025-11-14T20:49:08.267Z",
+		"comentarios" : "malisima! \n\nEl campo direccion no funciona correctamente",
+		"name" : "Encontrar mi dirección o tienda"
 	},
 	{
-		"correo" : "rosycancun77@gmail.com",
-		"pedido" : "1575399043921-01",
-		"fecha" : "2025-11-11T02:41:08.443Z",
-		"comentarios" : "Me gustaría y ayudaría mucho que tengan más disponibilidad de entrega a domicilio, eso es ofrecer un buen servicio de compra en línea porque tengo que recogerlo en la tienda más alejada de mi casa, cuando hay una tienda a 800 metros de mi casa.",
-		"name" : "Búsqueda de productos"
+		"correo" : "pacomagos@hotmail.com",
+		"pedido" : "1576309095725-01",
+		"fecha" : "2025-11-14T22:32:05.957Z",
+		"comentarios" : "Extremadamente lento el sitio, se supone que uno lo usa para mayor ",
+		"name" : "Encontrar mi dirección o tienda"
 	},
 	{
-		"correo" : "bohigasluis@gmail.com",
-		"pedido" : "1575399044404-01",
-		"fecha" : "2025-11-11T03:28:15.383Z",
+		"correo" : "cucre@outlook.com",
+		"pedido" : "1576319096105-01",
+		"fecha" : "2025-11-14T22:44:52.377Z",
 		"comentarios" : "",
-		"name" : "Búsqueda de productos"
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "lole_chikloz@hotmail.com",
+		"pedido" : "1576319096570-01",
+		"fecha" : "2025-11-14T23:48:13.737Z",
+		"comentarios" : "Pesimo que tengan disponible en pagina y al final me cancelen la compra.",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "albertvimaz@gmail.com",
+		"pedido" : "1576339098562-01",
+		"fecha" : "2025-11-15T00:50:52.817Z",
+		"comentarios" : "Tanto el sitio en internet como la aplicación son muy lentos y hace muy tardado el proceso de compra y la búsqueda de productos.",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "jimenezolguin024@hotmail.com",
+		"pedido" : "1576339098632-01",
+		"fecha" : "2025-11-15T00:55:41.510Z",
+		"comentarios" : "",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "lalymusa@hotmail.com",
+		"pedido" : "1576349099957-01",
+		"fecha" : "2025-11-15T02:08:00.757Z",
+		"comentarios" : "",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "rainier_9@hotmail.com",
+		"pedido" : "1576349099930-01",
+		"fecha" : "2025-11-15T02:14:32.173Z",
+		"comentarios" : "Hay productos que no encontré ni en búsqueda. Hay un montón de productos agotados. Pocas promociones, algo triste. Dice envío gratis y mi cuenta no fue gratis. Ni siquiera se ve dónde reclamar eso?! y me cobraron el envío. ",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "espanol150@hotmail.com",
+		"pedido" : "1576359101234-01",
+		"fecha" : "2025-11-15T03:18:42.967Z",
+		"comentarios" : "No pude comprar desde la aplicación ya que me indicaba que los productos no existían. No pude agregar mi dirección correcta.",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "ivan_greenday2008@hotmail.com",
+		"pedido" : "1576399104310-01",
+		"fecha" : "2025-11-15T07:07:20.520Z",
+		"comentarios" : "",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "cortezvanessa146@gmail.com",
+		"pedido" : "1576509109861-01",
+		"fecha" : "2025-11-15T18:02:59.933Z",
+		"comentarios" : "",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "clausng09@gmail.com",
+		"pedido" : "1576549114108-01",
+		"fecha" : "2025-11-15T21:57:18.270Z",
+		"comentarios" : "",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "perlamedina.ts@gmail.com",
+		"pedido" : "1576559114651-01",
+		"fecha" : "2025-11-15T22:31:46.377Z",
+		"comentarios" : "lo unico que no me gusto es que cambiaron el precio de centenario plata una vez que saque mi cuenta. ",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "blue.messenger@hotmail.com",
+		"pedido" : "1576559114731-01",
+		"fecha" : "2025-11-15T22:36:58.717Z",
+		"comentarios" : "La pagina es demaciada lenta. Es muy dificil que la pagina encuentre el domicilio de entrega y no permite meter la direccion manualmente.",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "carmina770304@outlook.com",
+		"pedido" : "1576369101745-01",
+		"fecha" : "2025-11-15T23:32:29.630Z",
+		"comentarios" : "Hice reporte por el precio de un producto y la inexistencia de otro que me ofrecían en ofertas para ti, y en lugar de resolverlo lo empeoraron, ya que cambiaron el horario de mi entrega y por necesitar mi pedido, cancele un compromiso.",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "jimenezolguin024@hotmail.com",
+		"pedido" : "1576609119978-01",
+		"fecha" : "2025-11-16T04:09:55.417Z",
+		"comentarios" : "",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "dxn.izamal@gmail.com",
+		"pedido" : "1576659122375-01",
+		"fecha" : "2025-11-16T09:09:47.970Z",
+		"comentarios" : "Noto más difícil de manejar ahora la aplicación y hay productos que no encuentro en línea. Varias veces e tratado de comprar y no se concreta porque se cierra, no avanza o me exige pago antes de entregar. Ojalá puedan mejorar esto. Gracias ",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "patriciayanezsanchez91@gmail.com",
+		"pedido" : "1576699122791-01",
+		"fecha" : "2025-11-16T13:24:56.193Z",
+		"comentarios" : "Me gustó solo q no me da oportunidad de envío gratis",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "valde.1234@hotmail.com",
+		"pedido" : "1576759127186-01",
+		"fecha" : "2025-11-16T18:32:16.537Z",
+		"comentarios" : "",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "marianakalicancun@hotmail.com",
+		"pedido" : "1576769128581-01",
+		"fecha" : "2025-11-16T19:49:04.470Z",
+		"comentarios" : "muy lento al cargar la plataforma, es un martirio buscar productos, compro los productos que ya se como se llaman ya no busco productos nuevos, muuy lentos.\nme rebotaron tres tarjetas diferentes.",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "luciuts09@hotmail.com",
+		"pedido" : "1576799131663-01",
+		"fecha" : "2025-11-16T22:48:23.670Z",
+		"comentarios" : "Está muy lento y hay que estarlo reiniciando la página varias veces para que cargue bien y se registre",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "salimaanimaloasis@gmail.com",
+		"pedido" : "1576809132480-01",
+		"fecha" : "2025-11-16T23:32:16.533Z",
+		"comentarios" : "",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "merol.ra@gmail.com",
+		"pedido" : "1576809133202-01",
+		"fecha" : "2025-11-17T00:14:56.147Z",
+		"comentarios" : "",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "acevesbertha@gmail.com",
+		"pedido" : "1576809133422-01",
+		"fecha" : "2025-11-17T00:29:10.537Z",
+		"comentarios" : "casi todo aparece como agotado",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "cireniarenedo12@gmail.com",
+		"pedido" : "1576839136676-01",
+		"fecha" : "2025-11-17T03:29:06.280Z",
+		"comentarios" : "",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "torrucosv@gmail.com",
+		"pedido" : "1576869139678-01",
+		"fecha" : "2025-11-17T06:24:16.540Z",
+		"comentarios" : "",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "gamaelsc12@gmail.com",
+		"pedido" : "1576959141844-01",
+		"fecha" : "2025-11-17T15:09:49.003Z",
+		"comentarios" : "La aplicación es muy lenta y no tiene mucha interactividad ",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "enriquejbm@yahoo.de",
+		"pedido" : "1576989144940-01",
+		"fecha" : "2025-11-17T17:54:35.753Z",
+		"comentarios" : "Sitio fallando desde semanas. Tengo producto ya en el carrito y quiero aumentar la cantidad, no me lo permite; tuve que eliminar y agregar nuevamente especificando en ese paso la cantidad mayor a 1 que deseaba. También, me vació el carrito sin razón.",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "victor.segura@tmm.com.mx",
+		"pedido" : "1577029150391-01",
+		"fecha" : "2025-11-17T21:34:18.990Z",
+		"comentarios" : "",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "jcarloshr81@yahoo.com.mx",
+		"pedido" : "1577029151093-01",
+		"fecha" : "2025-11-17T22:07:26.693Z",
+		"comentarios" : "falta un poco mas de seguridad para evitar problemas en pagos y en iniciar sesion",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "loicdupas@hotmail.fr",
+		"pedido" : "1577069156972-01",
+		"fecha" : "2025-11-18T01:39:05.743Z",
+		"comentarios" : "",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "paxman_4@hotmail.com",
+		"pedido" : "1577069157146-01",
+		"fecha" : "2025-11-18T01:45:56.477Z",
+		"comentarios" : "",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "wendo13051210@gmail.com",
+		"pedido" : "1577069158112-01",
+		"fecha" : "2025-11-18T02:16:12.913Z",
+		"comentarios" : "El costo de envío ",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "ordguezn@chedraui.com.mx",
+		"pedido" : "1577079158677-01",
+		"fecha" : "2025-11-18T02:34:41.783Z",
+		"comentarios" : "muy lenta ",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "a.marcelenocastillo@gmail.com",
+		"pedido" : "1577079160602-01",
+		"fecha" : "2025-11-18T03:29:53.287Z",
+		"comentarios" : "No encontraba la forma de agregar al carrito mi producto, tuve que descargar la app y en la búsqueda de producto no encontraba nada",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "edgarabelhernandeztrejo@hotmail.com",
+		"pedido" : "1577099165177-01",
+		"fecha" : "2025-11-18T05:14:26.627Z",
+		"comentarios" : "MUY COMPLICADA",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "joanvdaniel01@hotmail.com",
+		"pedido" : "1577109166364-01",
+		"fecha" : "2025-11-18T05:47:38.280Z",
+		"comentarios" : "EN EL FOLLETO VIENE LA LAVASECADORA LG MOD.WD12VVC4S6S Y ES PURO CUENTO NO SE ENCONTRO, MUY MAL POR CHEDRAUI\n",
+		"name" : "Encontrar mi dirección o tienda"
+	},
+	{
+		"correo" : "juanitalopez445@gmail.com",
+		"pedido" : "1577109166598-01",
+		"fecha" : "2025-11-18T05:48:41.357Z",
+		"comentarios" : "",
+		"name" : "Encontrar mi dirección o tienda"
 	},
 	{
 		"correo" : "vemi05@hotmail.com",
@@ -309,46 +519,557 @@
 		"name" : "Búsqueda de productos"
 	},
 	{
-		"correo" : "kazuminutricion@gmail.com",
-		"pedido" : "1575299038904-01",
-		"fecha" : "2025-11-10T16:38:39.477Z",
-		"comentarios" : "EN LA PAGINA ME MOSTRABA UN PRECIO PERO AL PONERLO EN EL CARRITO CAMBIABA A PRECIO SIN DESCUENTO",
-		"name" : "Que haya existencias (Disponibilidad)"
+		"correo" : "alanesph@gmail.com",
+		"pedido" : "1575899065425-01",
+		"fecha" : "2025-11-13T05:05:19.147Z",
+		"comentarios" : "Es dificil interactuar en la pagina. Tambien te ofrecen una promoción bastante buena y no puedes pagar, no sirve el sistema.. Promoción engañosa.",
+		"name" : "Búsqueda de productos"
 	},
 	{
-		"correo" : "ferniarana@gmail.com",
-		"pedido" : "1575329040666-01",
-		"fecha" : "2025-11-10T19:47:26.167Z",
-		"comentarios" : "Espero que esta ocasión no me cancelen la compra, ya que me la han cancelado 2 veces que por falta de stock, a pesar de que el producto aparece disponible",
-		"name" : "Que haya existencias (Disponibilidad)"
+		"correo" : "gatuus@gmail.com",
+		"pedido" : "1575939067152-01",
+		"fecha" : "2025-11-13T09:30:55.490Z",
+		"comentarios" : "No es para nada intuitiva la interfaz, en especial al agregar la direccion, es horrendo, No tiene campos de calles, numero, colonia, etc.",
+		"name" : "Búsqueda de productos"
 	},
 	{
-		"correo" : "sanvalbre15@gmail.com",
-		"pedido" : "1575349041857-01",
-		"fecha" : "2025-11-10T22:09:26.000Z",
-		"comentarios" : "Falta mas disponibilidad de productos ",
-		"name" : "Que haya existencias (Disponibilidad)"
-	},
-	{
-		"correo" : "jahnke7206@gmail.com",
-		"pedido" : "1575349041655-01",
-		"fecha" : "2025-11-10T22:43:39.927Z",
-		"comentarios" : "Muy mal servicio",
-		"name" : "Que haya existencias (Disponibilidad)"
-	},
-	{
-		"correo" : "bohigasluis@gmail.com",
-		"pedido" : "1575399044404-01",
-		"fecha" : "2025-11-11T03:28:15.383Z",
+		"correo" : "mireyaos@hotmail.com",
+		"pedido" : "1576009068631-01",
+		"fecha" : "2025-11-13T15:37:26.227Z",
 		"comentarios" : "",
-		"name" : "Que haya existencias (Disponibilidad)"
+		"name" : "Búsqueda de productos"
 	},
 	{
-		"correo" : "adrianaghuerta@gmail.com",
-		"pedido" : "1575419045089-01",
-		"fecha" : "2025-11-11T04:42:30.727Z",
-		"comentarios" : "POR FAVOR PEDIR A QUIEN TOMA VERDURAS, QUE SEAN LOS AGUACATES VERDES Y MEDIANOS, LOS DE HACE 8 DÍAS LOS PEDI VERDES Y ME LOS ENVIARON MUY MADUROS Y COLOR NEGRO.",
-		"name" : "Que haya existencias (Disponibilidad)"
+		"correo" : "martaaguilars@hotmail.com",
+		"pedido" : "1576019069249-01",
+		"fecha" : "2025-11-13T16:34:19.453Z",
+		"comentarios" : "Deberían poner horarios disponibles de entrega antes de que uno haga toda la lista. Ahora tengo que esperar mi super hasta mañana. Y hay cosas que necesito hoy.\nNo hay salchichas de pavo zwan, casi no hay pan dulce, pocas opciones de aceite…",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "mzubiransa@gmail.com",
+		"pedido" : "1574429007553-01",
+		"fecha" : "2025-11-13T19:42:35.887Z",
+		"comentarios" : "Hay muchas cosas que no estan en la tienda y aparece en linea. Es muy latoso que me esten diciendo que no hay productos que ya seleccione en linea. Gracias",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "humbertoheme@gmail.com",
+		"pedido" : "1576059072372-01",
+		"fecha" : "2025-11-13T20:53:02.773Z",
+		"comentarios" : "Terrible procesador de pagos. no pude pagar con ninguna tarjeta",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "alex_pegaso8@hotmail.com",
+		"pedido" : "1576069073226-01",
+		"fecha" : "2025-11-13T22:20:10.543Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "arriojap@hotmail.com",
+		"pedido" : "1576089074346-01",
+		"fecha" : "2025-11-13T23:53:07.817Z",
+		"comentarios" : "Opciones de horario",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "veroliz_15_3@hotmail.com",
+		"pedido" : "1576099075267-01",
+		"fecha" : "2025-11-14T01:30:29.433Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "miriam_cobos@outlook.es",
+		"pedido" : "1576109075435-01",
+		"fecha" : "2025-11-14T01:47:21.977Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "svr.911211@gmail.com",
+		"pedido" : "1576269088560-01",
+		"fecha" : "2025-11-14T17:46:03.887Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "garciaguarneroseva@gmail.com",
+		"pedido" : "1576269089616-01",
+		"fecha" : "2025-11-14T18:21:01.583Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "rnc_988@hotmail.com",
+		"pedido" : "1576269089602-01",
+		"fecha" : "2025-11-14T18:22:23.057Z",
+		"comentarios" : "se me hizo difícil poner la dirección ya que en mis datos no lo incluyen",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "laukracer@gmail.com",
+		"pedido" : "1576269089730-01",
+		"fecha" : "2025-11-14T18:25:22.103Z",
+		"comentarios" : "no me sale la opción de monedero Chedrahui",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "jescalera1105@gmail.com",
+		"pedido" : "1576299093939-01",
+		"fecha" : "2025-11-14T21:24:55.977Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "emyola@hotmail.com",
+		"pedido" : "1576319095770-01",
+		"fecha" : "2025-11-14T22:31:46.123Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "pacomagos@hotmail.com",
+		"pedido" : "1576309095725-01",
+		"fecha" : "2025-11-14T22:32:05.957Z",
+		"comentarios" : "Extremadamente lento el sitio, se supone que uno lo usa para mayor ",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "flores.anabella@gmail.com",
+		"pedido" : "1576319095803-01",
+		"fecha" : "2025-11-14T22:33:54.753Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "lole_chikloz@hotmail.com",
+		"pedido" : "1576319096570-01",
+		"fecha" : "2025-11-14T23:48:13.737Z",
+		"comentarios" : "Pesimo que tengan disponible en pagina y al final me cancelen la compra.",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "jravilaro@hotmail.com",
+		"pedido" : "1576329097618-01",
+		"fecha" : "2025-11-14T23:57:09.257Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "xayotanil@gmail.com",
+		"pedido" : "1576339098941-01",
+		"fecha" : "2025-11-15T01:14:58.600Z",
+		"comentarios" : "Es la segunda vez que hago una compra en línea espero que esta vez si sean responsables y me puedan respetar y entregar mi pedido en el tiempo establecido\nPorque la primera vez tuve una muy mala experiencia ya que no me tuvieron listo mi pedido y yo ",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "rainier_9@hotmail.com",
+		"pedido" : "1576349099930-01",
+		"fecha" : "2025-11-15T02:14:32.173Z",
+		"comentarios" : "Hay productos que no encontré ni en búsqueda. Hay un montón de productos agotados. Pocas promociones, algo triste. Dice envío gratis y mi cuenta no fue gratis. Ni siquiera se ve dónde reclamar eso?! y me cobraron el envío. ",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "xayotanil@gmail.com",
+		"pedido" : "1576359100389-01",
+		"fecha" : "2025-11-15T02:33:32.677Z",
+		"comentarios" : "De verdad quiero confiar en que podrán darme mi pedido en el horario establecido por favor por que yo tengo que viajar y pagar pasaje para ir a recoger mi licuadora y televisor ",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "jyaninb@yahoo.com.mx",
+		"pedido" : "1576369102284-01",
+		"fecha" : "2025-11-15T04:22:17.360Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "isabel.arenas1994@gmail.com",
+		"pedido" : "1576369102334-01",
+		"fecha" : "2025-11-15T04:26:01.617Z",
+		"comentarios" : "Pues primera vez que compro espero sea confiable",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "ivan_greenday2008@hotmail.com",
+		"pedido" : "1576399104310-01",
+		"fecha" : "2025-11-15T07:07:20.520Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "yaayaa.manz@gmail.com",
+		"pedido" : "1576479106116-01",
+		"fecha" : "2025-11-15T14:40:43.180Z",
+		"comentarios" : "En otra tienda si habia despinibilidad y en línea me marcaba agotado",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "primaz.2620@gmail.com",
+		"pedido" : "1576489107645-01",
+		"fecha" : "2025-11-15T16:05:12.150Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "osanfa@outlook.com",
+		"pedido" : "1576509109347-01",
+		"fecha" : "2025-11-15T17:33:43.460Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "mg99107965@gmail.com",
+		"pedido" : "1576509109435-02",
+		"fecha" : "2025-11-15T17:40:58.810Z",
+		"comentarios" : "Muy mala tuve que comprar un horno todo feo por que no tenían otro",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "cortezvanessa146@gmail.com",
+		"pedido" : "1576509109861-01",
+		"fecha" : "2025-11-15T18:02:59.933Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "erikadulloa@hotmail.com",
+		"pedido" : "1576529111591-01",
+		"fecha" : "2025-11-15T19:32:30.607Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "nathaly32@live.com",
+		"pedido" : "1576519111393-01",
+		"fecha" : "2025-11-15T20:07:56.267Z",
+		"comentarios" : "No me mandaron muchos productos y tampoco me avisaron que no había o que si queria cambiarlo por otras opciones ",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "carlos.comunicacione@gmail.com",
+		"pedido" : "1576299092880-01",
+		"fecha" : "2025-11-15T21:16:56.567Z",
+		"comentarios" : "Cancelan pedidos ",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "clausng09@gmail.com",
+		"pedido" : "1576549114108-01",
+		"fecha" : "2025-11-15T21:57:18.270Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "blue.messenger@hotmail.com",
+		"pedido" : "1576559114731-01",
+		"fecha" : "2025-11-15T22:36:58.717Z",
+		"comentarios" : "La pagina es demaciada lenta. Es muy dificil que la pagina encuentre el domicilio de entrega y no permite meter la direccion manualmente.",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "carmina770304@outlook.com",
+		"pedido" : "1576369101745-01",
+		"fecha" : "2025-11-15T23:32:29.630Z",
+		"comentarios" : "Hice reporte por el precio de un producto y la inexistencia de otro que me ofrecían en ofertas para ti, y en lugar de resolverlo lo empeoraron, ya que cambiaron el horario de mi entrega y por necesitar mi pedido, cancele un compromiso.",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "nora_mercedes@hotmail.com",
+		"pedido" : "1576599119249-01",
+		"fecha" : "2025-11-16T03:22:14.830Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "jimenezolguin024@hotmail.com",
+		"pedido" : "1576609119978-01",
+		"fecha" : "2025-11-16T04:09:55.417Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "angelvanegas@gmail.com",
+		"pedido" : "1576539113244-01",
+		"fecha" : "2025-11-16T07:11:31.623Z",
+		"comentarios" : "no llegó mi pedido, ni tuve notificación alguna. No es la primera vez.",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "maryc_sosa@hotmail.com",
+		"pedido" : "1576639122084-02",
+		"fecha" : "2025-11-16T07:29:53.220Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "dxn.izamal@gmail.com",
+		"pedido" : "1576659122375-01",
+		"fecha" : "2025-11-16T09:09:47.970Z",
+		"comentarios" : "Noto más difícil de manejar ahora la aplicación y hay productos que no encuentro en línea. Varias veces e tratado de comprar y no se concreta porque se cierra, no avanza o me exige pago antes de entregar. Ojalá puedan mejorar esto. Gracias ",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "anaceciliamorareyes@gmail.com",
+		"pedido" : "1576729124687-01",
+		"fecha" : "2025-11-16T16:14:13.240Z",
+		"comentarios" : "Se acabaron muy rápido alguno productos.",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "victoriahehu@outlook.com",
+		"pedido" : "1576729124416-01",
+		"fecha" : "2025-11-16T16:15:39.047Z",
+		"comentarios" : "Buena experiencia en portal; la cuestión de mails de confirmación del pedido y seguimiento; no muy buena. Poca aclaración de si el pedido sí se generó o no. ",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "yoboyalegre@yahoo.com.mx",
+		"pedido" : "1576739125737-01",
+		"fecha" : "2025-11-16T17:19:15.527Z",
+		"comentarios" : "No pude comprar dos promociones de 3*2 por que sus sistema marca como límite 5 productos.\nAdemás. no pude ingresar los datos de Mi Chedrahui",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "jpinzon@izzi.mx",
+		"pedido" : "1576749126884-01",
+		"fecha" : "2025-11-16T18:17:46.867Z",
+		"comentarios" : "llevan semanas sin productos kelloggs.... mal.",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "rubenmunizv75@gmail.com",
+		"pedido" : "1576769128634-01",
+		"fecha" : "2025-11-16T19:52:22.967Z",
+		"comentarios" : "Desde ayer estoy tratando de comprar, ya fue posible ",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "zyryam@gmail.com",
+		"pedido" : "1576719123336-01",
+		"fecha" : "2025-11-16T22:01:21.730Z",
+		"comentarios" : "Los compré a las 8am y ahorita que ya era la entrega 4pm me avisan que según se quedaron un inventario, obviamente ya lo compraron ellos y cancelan el mío a pesar que fue pago con tarjeta ",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "luciuts09@hotmail.com",
+		"pedido" : "1576799131663-01",
+		"fecha" : "2025-11-16T22:48:23.670Z",
+		"comentarios" : "Está muy lento y hay que estarlo reiniciando la página varias veces para que cargue bien y se registre",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "merol.ra@gmail.com",
+		"pedido" : "1576809133202-01",
+		"fecha" : "2025-11-17T00:14:56.147Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "patriciamp7@yahoo.com",
+		"pedido" : "1576829135399-02",
+		"fecha" : "2025-11-17T02:30:48.697Z",
+		"comentarios" : "Existe una gran variedad de productos en catálogo pero la disponibilidad es muy limitada. Muchos de los productos aparecen agotados y no se actualizan en varios días, lo que me da idea de que no todos los venden en línea",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "oa62386@gmail.com",
+		"pedido" : "1576839135982-01",
+		"fecha" : "2025-11-17T02:50:01.653Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "gina907@yahoo.com",
+		"pedido" : "1576839136323-01",
+		"fecha" : "2025-11-17T03:08:00.687Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "lenyvelazquez981@gmail.com",
+		"pedido" : "1576849136776-01",
+		"fecha" : "2025-11-17T03:35:39.230Z",
+		"comentarios" : "Falta variedad de productos y otros estan limitados a cierta cantidad",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "lenyvelazquez981@gmail.com",
+		"pedido" : "1576849136776-01",
+		"fecha" : "2025-11-17T03:35:39.587Z",
+		"comentarios" : "Falta variedad de productos y otros estan limitados a cierta cantidad",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "lenyvelazquez981@gmail.com",
+		"pedido" : "1576849136776-01",
+		"fecha" : "2025-11-17T03:35:39.887Z",
+		"comentarios" : "Falta variedad de productos y otros estan limitados a cierta cantidad",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "anapcabrerah@hotmail.com",
+		"pedido" : "1576849137162-01",
+		"fecha" : "2025-11-17T03:58:38.310Z",
+		"comentarios" : "Buenas ofertas. No  hubo productos de importación que en walmart sí, aunque encontré mejores ofertas aquí. No me gusta que el periodo de tiempo de entrega sea tan amplio. me gustaría que fuera de 1 hora exacta  ",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "j.a.okmpo@gmail.com",
+		"pedido" : "1576859138058-01",
+		"fecha" : "2025-11-17T05:03:20.493Z",
+		"comentarios" : "Me hubiese gustado poder recoger mi pedido en la tienda mas cercana a mi domicilio, pero marcaba como agotado, ojala pudieran mandar los pedidos ahi y poder recogerlo en sucursal.",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "noezagalo@hotmail.com",
+		"pedido" : "1576979143436-01",
+		"fecha" : "2025-11-17T16:43:07.213Z",
+		"comentarios" : "La compra en el sitio es una tortura, tengo instalada la aplicación en mi cel y no pude hacer mi compra, tuve que ingresar por medio de mi computadora y todo mi carrito se borro, al agregar de nuevo mis productos uno estaba agotado, pesimo en verdad.",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "apbatistag@yahoo.com.mx",
+		"pedido" : "1576989144599-01",
+		"fecha" : "2025-11-17T17:35:10.377Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "raziel_007x@hotmail.com",
+		"pedido" : "1576989144716-01",
+		"fecha" : "2025-11-17T17:40:11.097Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "solissoren45@gmail.com",
+		"pedido" : "1576989145171-01",
+		"fecha" : "2025-11-17T17:58:53.110Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "millita7373@hotmail.com",
+		"pedido" : "1577009148061-01",
+		"fecha" : "2025-11-17T19:57:34.673Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "bmonito@hotmail.com",
+		"pedido" : "1577029150990-01",
+		"fecha" : "2025-11-17T22:01:32.677Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "mlgutierrezg@hotmail.com",
+		"pedido" : "1577049153979-01",
+		"fecha" : "2025-11-17T23:54:42.110Z",
+		"comentarios" : "NO ES MUY CLARA, CAMBIA LA DIRECCION DE ENVÌO Y NO HAY UNA GUÌA . . ",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "alejandrobustos88@gmail.com",
+		"pedido" : "1577059155614-01",
+		"fecha" : "2025-11-18T00:55:51.790Z",
+		"comentarios" : "la anterior compra a esta que hice con ustedes antes de esta , me cobraron 2 veces la cuenta  y les faltó enviarme 5 cervezas victoria de 1 six que compré,solo me dieron 1 de 6 que pagué espero que esta vez no tenga algun inconveniente con mi pedido ",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "ferrera88hernandez@gmail.com",
+		"pedido" : "1577059156661-01",
+		"fecha" : "2025-11-18T01:29:35.323Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "loicdupas@hotmail.fr",
+		"pedido" : "1577069156972-01",
+		"fecha" : "2025-11-18T01:39:05.743Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "fercho.leon07@gmail.com",
+		"pedido" : "1577069158090-01",
+		"fecha" : "2025-11-18T02:14:49.067Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "almiux.lopez03@gmail.com",
+		"pedido" : "1577079159420-01",
+		"fecha" : "2025-11-18T02:57:47.737Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "contrapesonoticiaslp@gmail.com",
+		"pedido" : "1577079159505-01",
+		"fecha" : "2025-11-18T03:01:13.753Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "itzelch46@hotmail.com",
+		"pedido" : "1577079159553-01",
+		"fecha" : "2025-11-18T03:01:22.300Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "a.marcelenocastillo@gmail.com",
+		"pedido" : "1577079160602-01",
+		"fecha" : "2025-11-18T03:29:53.287Z",
+		"comentarios" : "No encontraba la forma de agregar al carrito mi producto, tuve que descargar la app y en la búsqueda de producto no encontraba nada",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "ponce_eclipse@hotmail.com",
+		"pedido" : "1577089161790-01",
+		"fecha" : "2025-11-18T03:58:50.527Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "irmatz27@gmail.com",
+		"pedido" : "1577089161916-01",
+		"fecha" : "2025-11-18T04:04:06.177Z",
+		"comentarios" : "Sugiero que si algún producto ya se agotó, ya no se muestre en las opciones de compra, pues es incómodo agregarlo al carrito y que resulte agotado.\nAsi también, deberían manejar más opciones de pago, por ejemplo Mercado Pago o tiendas de conveniencia",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "cleomatrix.libertad@gmail.com",
+		"pedido" : "1577099164086-01",
+		"fecha" : "2025-11-18T04:52:57.453Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "joanvdaniel01@hotmail.com",
+		"pedido" : "1577109166364-01",
+		"fecha" : "2025-11-18T05:47:38.280Z",
+		"comentarios" : "EN EL FOLLETO VIENE LA LAVASECADORA LG MOD.WD12VVC4S6S Y ES PURO CUENTO NO SE ENCONTRO, MUY MAL POR CHEDRAUI\n",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "juanitalopez445@gmail.com",
+		"pedido" : "1577109166598-01",
+		"fecha" : "2025-11-18T05:48:41.357Z",
+		"comentarios" : "",
+		"name" : "Búsqueda de productos"
+	},
+	{
+		"correo" : "paulu2953@gmail.com",
+		"pedido" : "1577109166747-01",
+		"fecha" : "2025-11-18T05:51:45.217Z",
+		"comentarios" : "Tarda mucho el poder hacer el pedido",
+		"name" : "Búsqueda de productos"
 	},
 	{
 		"correo" : "almacensatelite@lomalinda.com.mx",
@@ -400,25 +1121,270 @@
 		"name" : "Que haya existencias (Disponibilidad)"
 	},
 	{
-		"correo" : "miguelortegamendoza@gmail.com",
-		"pedido" : "1575339041174-01",
-		"fecha" : "2025-11-10T20:49:37.900Z",
-		"comentarios" : "APP MUY LENTA Y MAL DISEÑO.",
-		"name" : "Precios y promociones"
+		"correo" : "alejandro1reyes@gmail.com",
+		"pedido" : "1575899065173-01",
+		"fecha" : "2025-11-13T04:40:29.463Z",
+		"comentarios" : "bien",
+		"name" : "Que haya existencias (Disponibilidad)"
 	},
 	{
-		"correo" : "jahnke7206@gmail.com",
-		"pedido" : "1575349041655-01",
-		"fecha" : "2025-11-10T22:43:39.927Z",
-		"comentarios" : "Muy mal servicio",
-		"name" : "Precios y promociones"
+		"correo" : "alanesph@gmail.com",
+		"pedido" : "1575899065425-01",
+		"fecha" : "2025-11-13T05:05:19.147Z",
+		"comentarios" : "Es dificil interactuar en la pagina. Tambien te ofrecen una promoción bastante buena y no puedes pagar, no sirve el sistema.. Promoción engañosa.",
+		"name" : "Que haya existencias (Disponibilidad)"
 	},
 	{
-		"correo" : "bohigasluis@gmail.com",
-		"pedido" : "1575399044404-01",
-		"fecha" : "2025-11-11T03:28:15.383Z",
+		"correo" : "gatuus@gmail.com",
+		"pedido" : "1575939067152-01",
+		"fecha" : "2025-11-13T09:30:55.490Z",
+		"comentarios" : "No es para nada intuitiva la interfaz, en especial al agregar la direccion, es horrendo, No tiene campos de calles, numero, colonia, etc.",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "paco_chavira@hotmail.com",
+		"pedido" : "1576059072232-01",
+		"fecha" : "2025-11-13T20:38:42.727Z",
+		"comentarios" : "Complicado Crear Cuenta",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "crlsgranados18@hotmail.com",
+		"pedido" : "1576059072703-01",
+		"fecha" : "2025-11-13T21:31:00.397Z",
 		"comentarios" : "",
-		"name" : "Precios y promociones"
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "alex_pegaso8@hotmail.com",
+		"pedido" : "1576069073226-01",
+		"fecha" : "2025-11-13T22:20:10.543Z",
+		"comentarios" : "",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "renataml@yahoo.com",
+		"pedido" : "1576119076050-01",
+		"fecha" : "2025-11-14T02:57:48.497Z",
+		"comentarios" : "",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "medinaluna087@gmail.com",
+		"pedido" : "1576139076867-01",
+		"fecha" : "2025-11-14T04:38:23.560Z",
+		"comentarios" : "El precio está elevado a comparación de hoy ",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "gael04@hotmail.com",
+		"pedido" : "1576159079626-01",
+		"fecha" : "2025-11-14T07:16:22.050Z",
+		"comentarios" : "No especifica si el producto es nuevo lo cual me da pauta para una devolución caso de que no sea nuevo",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "rnc_988@hotmail.com",
+		"pedido" : "1576269089602-01",
+		"fecha" : "2025-11-14T18:22:23.057Z",
+		"comentarios" : "se me hizo difícil poner la dirección ya que en mis datos no lo incluyen",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "yakyhila@yahoo.com",
+		"pedido" : "1576319096177-01",
+		"fecha" : "2025-11-14T22:47:12.170Z",
+		"comentarios" : "",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "lole_chikloz@hotmail.com",
+		"pedido" : "1576319096570-01",
+		"fecha" : "2025-11-14T23:48:13.737Z",
+		"comentarios" : "Pesimo que tengan disponible en pagina y al final me cancelen la compra.",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "jimenezolguin024@hotmail.com",
+		"pedido" : "1576339098632-01",
+		"fecha" : "2025-11-15T00:55:41.510Z",
+		"comentarios" : "",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "xayotanil@gmail.com",
+		"pedido" : "1576339098941-01",
+		"fecha" : "2025-11-15T01:14:58.600Z",
+		"comentarios" : "Es la segunda vez que hago una compra en línea espero que esta vez si sean responsables y me puedan respetar y entregar mi pedido en el tiempo establecido\nPorque la primera vez tuve una muy mala experiencia ya que no me tuvieron listo mi pedido y yo ",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "lalymusa@hotmail.com",
+		"pedido" : "1576349099957-01",
+		"fecha" : "2025-11-15T02:08:00.757Z",
+		"comentarios" : "",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "rainier_9@hotmail.com",
+		"pedido" : "1576349099930-01",
+		"fecha" : "2025-11-15T02:14:32.173Z",
+		"comentarios" : "Hay productos que no encontré ni en búsqueda. Hay un montón de productos agotados. Pocas promociones, algo triste. Dice envío gratis y mi cuenta no fue gratis. Ni siquiera se ve dónde reclamar eso?! y me cobraron el envío. ",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "xayotanil@gmail.com",
+		"pedido" : "1576359100389-01",
+		"fecha" : "2025-11-15T02:33:32.677Z",
+		"comentarios" : "De verdad quiero confiar en que podrán darme mi pedido en el horario establecido por favor por que yo tengo que viajar y pagar pasaje para ir a recoger mi licuadora y televisor ",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "ivan_greenday2008@hotmail.com",
+		"pedido" : "1576399104310-01",
+		"fecha" : "2025-11-15T07:07:20.520Z",
+		"comentarios" : "",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "carmina770304@outlook.com",
+		"pedido" : "1576369101745-01",
+		"fecha" : "2025-11-15T23:32:29.630Z",
+		"comentarios" : "Hice reporte por el precio de un producto y la inexistencia de otro que me ofrecían en ofertas para ti, y en lugar de resolverlo lo empeoraron, ya que cambiaron el horario de mi entrega y por necesitar mi pedido, cancele un compromiso.",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "jimenezolguin024@hotmail.com",
+		"pedido" : "1576609119978-01",
+		"fecha" : "2025-11-16T04:09:55.417Z",
+		"comentarios" : "",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "lic.liduenriquez@hotmail.com",
+		"pedido" : "1576609120217-01",
+		"fecha" : "2025-11-16T04:27:50.493Z",
+		"comentarios" : "No me respetaba la promoción 3x2 en una presentación de papel higiénico cotonelle que tenia la leyenda, sin embargo en el carrito no aparecía el producto con la promoción, cobraba las 3 piezas. ",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "dxn.izamal@gmail.com",
+		"pedido" : "1576659122375-01",
+		"fecha" : "2025-11-16T09:09:47.970Z",
+		"comentarios" : "Noto más difícil de manejar ahora la aplicación y hay productos que no encuentro en línea. Varias veces e tratado de comprar y no se concreta porque se cierra, no avanza o me exige pago antes de entregar. Ojalá puedan mejorar esto. Gracias ",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "yoboyalegre@yahoo.com.mx",
+		"pedido" : "1576739125737-01",
+		"fecha" : "2025-11-16T17:19:15.527Z",
+		"comentarios" : "No pude comprar dos promociones de 3*2 por que sus sistema marca como límite 5 productos.\nAdemás. no pude ingresar los datos de Mi Chedrahui",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "idukne@gmail.com",
+		"pedido" : "1576769128832-01",
+		"fecha" : "2025-11-16T20:02:07.883Z",
+		"comentarios" : "",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "latvdiaz170800@gmail.com",
+		"pedido" : "1576789130473-01",
+		"fecha" : "2025-11-16T21:36:17.030Z",
+		"comentarios" : "En internet aparecía en 204 el artículo y ahora es más caro",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "mafervelasquez04@gmail.com",
+		"pedido" : "1576869138994-01",
+		"fecha" : "2025-11-17T05:34:42.140Z",
+		"comentarios" : "Se actualizó el precio al pagar y le subieron, deberian respetar lo que ofertan. ",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "carolpala38@gmail.com",
+		"pedido" : "1576989145363-01",
+		"fecha" : "2025-11-17T18:08:13.300Z",
+		"comentarios" : "",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "bmonito@hotmail.com",
+		"pedido" : "1577029150990-01",
+		"fecha" : "2025-11-17T22:01:32.677Z",
+		"comentarios" : "",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "jcarloshr81@yahoo.com.mx",
+		"pedido" : "1577029151093-01",
+		"fecha" : "2025-11-17T22:07:26.693Z",
+		"comentarios" : "falta un poco mas de seguridad para evitar problemas en pagos y en iniciar sesion",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "gerardo92vzr92@gmail.com",
+		"pedido" : "1577029151225-01",
+		"fecha" : "2025-11-17T22:09:53.103Z",
+		"comentarios" : "Hay productos que aun no se encuentran en la pagina online.",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "numerocuatrooo@gmail.com",
+		"pedido" : "1577049154765-01",
+		"fecha" : "2025-11-18T00:22:29.150Z",
+		"comentarios" : "",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "mdza_dos@yahoo.com.mx",
+		"pedido" : "1577059155959-01",
+		"fecha" : "2025-11-18T01:08:57.537Z",
+		"comentarios" : "el portal estuvo demasiado lento, pero demasiado lento.\nel precio final de cada articulo no corresponde al 3x2",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "paxman_4@hotmail.com",
+		"pedido" : "1577069157146-01",
+		"fecha" : "2025-11-18T01:45:56.477Z",
+		"comentarios" : "",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "wendo13051210@gmail.com",
+		"pedido" : "1577069158112-01",
+		"fecha" : "2025-11-18T02:16:12.913Z",
+		"comentarios" : "El costo de envío ",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "andreardcorona@gmail.com",
+		"pedido" : "1577079160159-01",
+		"fecha" : "2025-11-18T03:21:39.013Z",
+		"comentarios" : "puse el cupon lo aceptaron y no hubo ningun descuento",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "edgarabelhernandeztrejo@hotmail.com",
+		"pedido" : "1577099165177-01",
+		"fecha" : "2025-11-18T05:14:26.627Z",
+		"comentarios" : "MUY COMPLICADA",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "brianrodriguezcifuentes@gmail.com",
+		"pedido" : "1577099165770-01",
+		"fecha" : "2025-11-18T05:29:06.403Z",
+		"comentarios" : "Muy mala página para poder registrar bien tu dirección, muy complicado y nada fácil de buscar tu dirección ",
+		"name" : "Que haya existencias (Disponibilidad)"
+	},
+	{
+		"correo" : "juanitalopez445@gmail.com",
+		"pedido" : "1577109166598-01",
+		"fecha" : "2025-11-18T05:48:41.357Z",
+		"comentarios" : "",
+		"name" : "Que haya existencias (Disponibilidad)"
 	},
 	{
 		"correo" : "gra2008@me.com",
@@ -519,32 +1485,536 @@
 		"name" : "Precios y promociones"
 	},
 	{
-		"correo" : "jr.2garmal@gmail.com",
-		"pedido" : "1575289038398-01",
-		"fecha" : "2025-11-10T15:38:14.083Z",
+		"correo" : "jorgealvarado87008@gmail.com",
+		"pedido" : "1575889064952-01",
+		"fecha" : "2025-11-13T04:25:22.863Z",
 		"comentarios" : "",
-		"name" : "Proceso de pago (Checkout)"
+		"name" : "Precios y promociones"
 	},
 	{
-		"correo" : "jahnke7206@gmail.com",
-		"pedido" : "1575349041655-01",
-		"fecha" : "2025-11-10T22:43:39.927Z",
-		"comentarios" : "Muy mal servicio",
-		"name" : "Proceso de pago (Checkout)"
+		"correo" : "alanesph@gmail.com",
+		"pedido" : "1575899065425-01",
+		"fecha" : "2025-11-13T05:05:19.147Z",
+		"comentarios" : "Es dificil interactuar en la pagina. Tambien te ofrecen una promoción bastante buena y no puedes pagar, no sirve el sistema.. Promoción engañosa.",
+		"name" : "Precios y promociones"
 	},
 	{
-		"correo" : "bohigasluis@gmail.com",
-		"pedido" : "1575399044404-01",
-		"fecha" : "2025-11-11T03:28:15.383Z",
+		"correo" : "gatuus@gmail.com",
+		"pedido" : "1575939067152-01",
+		"fecha" : "2025-11-13T09:30:55.490Z",
+		"comentarios" : "No es para nada intuitiva la interfaz, en especial al agregar la direccion, es horrendo, No tiene campos de calles, numero, colonia, etc.",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "abw64@hotmail.com",
+		"pedido" : "1575989067923-01",
+		"fecha" : "2025-11-13T14:24:14.277Z",
+		"comentarios" : "No puedo pagar en linea con Paypal ni tarjeta de credito (extranjero)",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "admin@grupodyrall.com",
+		"pedido" : "1576009068818-01",
+		"fecha" : "2025-11-13T15:54:59.327Z",
+		"comentarios" : "no me dejo seleccionar hora de entrega hoy",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "martaaguilars@hotmail.com",
+		"pedido" : "1576019069249-01",
+		"fecha" : "2025-11-13T16:34:19.453Z",
+		"comentarios" : "Deberían poner horarios disponibles de entrega antes de que uno haga toda la lista. Ahora tengo que esperar mi super hasta mañana. Y hay cosas que necesito hoy.\nNo hay salchichas de pavo zwan, casi no hay pan dulce, pocas opciones de aceite…",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "marlen181295@gmail.com",
+		"pedido" : "1576019069840-01",
+		"fecha" : "2025-11-13T17:34:56.837Z",
+		"comentarios" : "Se quedo trabado cuando pague ",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "blues_eltio@yahoo.com",
+		"pedido" : "1576029070051-01",
+		"fecha" : "2025-11-13T17:50:40.547Z",
+		"comentarios" : "MUCHOS PROBLEMAS PARA EL ENVIO DEL CODIGO DE VERIFICACION",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "elva260573@outlook.com",
+		"pedido" : "1576029070754-01",
+		"fecha" : "2025-11-13T18:28:47.397Z",
+		"comentarios" : "Muy lenta su página web y su aplicación, demasiados errores y no acepta mi tarjeta de bankaya.",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "belmar.p30@gmail.com",
+		"pedido" : "1576039071101-01",
+		"fecha" : "2025-11-13T18:56:51.313Z",
+		"comentarios" : "ME MARCO MUCHOS ERRORES EN EL COBRO A MI TARJETA TUVE QUE REPETIR EL PROCESO COMO 4 VECES. ADEMAS MUCHOS ERRORES PARA LOGEAR A MI CUENTA",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "marcosolis759@icloud.com",
+		"pedido" : "1576039071403-01",
+		"fecha" : "2025-11-13T19:21:07.530Z",
+		"comentarios" : "NO ME DEJO PAGAR CON MI TARJETA DIGITAL ",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "humbertoheme@gmail.com",
+		"pedido" : "1576059072372-01",
+		"fecha" : "2025-11-13T20:53:02.773Z",
+		"comentarios" : "Terrible procesador de pagos. no pude pagar con ninguna tarjeta",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "efrainpsic@hotmail.com",
+		"pedido" : "1576079073875-01",
+		"fecha" : "2025-11-13T23:12:51.857Z",
+		"comentarios" : "Siempre que intento comprar debe hacer como 20 intentos y  me declina mi tarjeta y aunque al llamar al banco ellos me indican que el problema es que ustedes son quienes declinan el pago. Esto sucede siempre.",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "chile.manuel1997@gmail.com",
+		"pedido" : "1576119076072-01",
+		"fecha" : "2025-11-14T03:00:53.467Z",
+		"comentarios" : "Es muy lento, pero funcional",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "susyleon@hotmail.com",
+		"pedido" : "1576219081853-01",
+		"fecha" : "2025-11-14T13:27:25.970Z",
+		"comentarios" : "No funciona el método de pago con tarjeta",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "andrea.aspront@gmail.com",
+		"pedido" : "1576239084088-01",
+		"fecha" : "2025-11-14T15:09:25.843Z",
+		"comentarios" : "Nunca me dejó poner el saldo de mi monedero Chedraui",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "vara_mj@yahoo.com",
+		"pedido" : "1576249086253-01",
+		"fecha" : "2025-11-14T16:25:18.367Z",
+		"comentarios" : "No envían a mi domicilio.\nPiden muchos datos para realizar el pago.\nCuesta mucho definir una dirección predeterminada.\nNo me dan opciones de fechas suficientes para recoger en tienda.\nEn otras plataformas es mucho más fácil comprar en línea!",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "yocyvicm@gmail.com",
+		"pedido" : "1576259087665-01",
+		"fecha" : "2025-11-14T17:11:30.717Z",
 		"comentarios" : "",
-		"name" : "Proceso de pago (Checkout)"
+		"name" : "Precios y promociones"
 	},
 	{
-		"correo" : "jeca.luis@hotmail.com",
-		"pedido" : "1575409044709-01",
-		"fecha" : "2025-11-11T04:13:07.640Z",
-		"comentarios" : "estaba muy bien cuando se podia diferir a meses sin interes",
-		"name" : "Proceso de pago (Checkout)"
+		"correo" : "jcorona@chedraui.com.mx",
+		"pedido" : "1576269088683-01",
+		"fecha" : "2025-11-14T17:53:01.733Z",
+		"comentarios" : "No dejó pagar con tarjeta BBVA de Crédito digital",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "blink00leonel@gmail.com",
+		"pedido" : "1576279090423-01",
+		"fecha" : "2025-11-14T18:52:14.833Z",
+		"comentarios" : "El sitio no permite agregar formas de pago\nArroja error con las tarjetas de vales de despensa",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "ponchimix@yahoo.com",
+		"pedido" : "1576279090504-01",
+		"fecha" : "2025-11-14T18:56:14.593Z",
+		"comentarios" : "Pesimo su sistema de cobranza. ",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "cucre@outlook.com",
+		"pedido" : "1576319096105-01",
+		"fecha" : "2025-11-14T22:44:52.377Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "araceliurzua97@gmail.com",
+		"pedido" : "1576319096234-01",
+		"fecha" : "2025-11-14T22:49:19.740Z",
+		"comentarios" : "No me permitió mete la tarjeta de crédito ",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "antoniobcebadag@gmail.com",
+		"pedido" : "1576319096921-01",
+		"fecha" : "2025-11-14T23:15:37.707Z",
+		"comentarios" : "Intenté pagar con mi tarjeta de crédito BBVA en dos ocasiones y no pude. tuve que usar Pay Pal. Eso no está bien.",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "lole_chikloz@hotmail.com",
+		"pedido" : "1576319096570-01",
+		"fecha" : "2025-11-14T23:48:13.737Z",
+		"comentarios" : "Pesimo que tengan disponible en pagina y al final me cancelen la compra.",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "graceloo31@gmail.com",
+		"pedido" : "1576329098135-01",
+		"fecha" : "2025-11-15T00:28:05.703Z",
+		"comentarios" : "Le puse otros datos de quién recibe y en los datos del pedido siguen apareciendo mis datos. \n",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "ppjavr@hotmail.com",
+		"pedido" : "1576369101885-01",
+		"fecha" : "2025-11-15T04:01:14.000Z",
+		"comentarios" : "En el proceso de compra registré a la persona que recoge el producto pero en el detalle y en la confirmación no aparece. Esta mal que no exista confirmación. ",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "erikadulloa@hotmail.com",
+		"pedido" : "1576529111591-01",
+		"fecha" : "2025-11-15T19:32:30.607Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "alex_esqueda@live.com.mx",
+		"pedido" : "1576529112343-01",
+		"fecha" : "2025-11-15T20:16:44.627Z",
+		"comentarios" : "Todo bien en la aplicación web. Intenté realizarlo por la aplicación móvil pero no me dejó avanzar al momento de elegir el lugar para envío ni pago. Mala experiencia en aplicación móvil.",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "pedroi_9@hotmail.com",
+		"pedido" : "1576529112413-01",
+		"fecha" : "2025-11-15T20:20:54.227Z",
+		"comentarios" : "Muy mala experiencia, dos dias intentnado comprar y el portal no funciona, intente con diferentes tarjetas y ninguna pasa y en otros comercios sigo comprando sin problema, el chat no resuelve y via telefonica no pudeden procesar el pago con promocion",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "miguel.a.hdez.c@outlook.com",
+		"pedido" : "1576549114148-01",
+		"fecha" : "2025-11-15T22:00:44.727Z",
+		"comentarios" : "Espero que ahora si llegue mi pedido completo!!!\n\nAdemás no pude aplicar el descuento del monedero Chedraui. pésima experiencia",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "nizanajhanda_antonio@hotmail.com",
+		"pedido" : "1576549114506-01",
+		"fecha" : "2025-11-15T22:23:06.050Z",
+		"comentarios" : "LAS TERMINALES AVECES NO SIRVEN Y NO ME PERMITE PAGAR CON MI TARJETA DE CREDITO POR FAVOR CHECAR LAS TERMINALES ANTES DE MANDAR A LOS QUE ENTREGAN",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "llla79@hotmail.com",
+		"pedido" : "1576589118119-01",
+		"fecha" : "2025-11-16T02:21:40.450Z",
+		"comentarios" : "No pude pagar con mis tarjetas de credito, solo me acepto pay pal",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "nora_mercedes@hotmail.com",
+		"pedido" : "1576599119249-01",
+		"fecha" : "2025-11-16T03:22:14.830Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "maxadvanced@gmail.com",
+		"pedido" : "1576609119479-01",
+		"fecha" : "2025-11-16T03:38:59.640Z",
+		"comentarios" : "Hay muchos errores  y la aplicación para iOS no funcionó, no me dejó usar PayPal tampoco",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "maricelasanpedrohernandez@gmail.com",
+		"pedido" : "1576609119838-01",
+		"fecha" : "2025-11-16T04:01:42.310Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "jimenezolguin024@hotmail.com",
+		"pedido" : "1576609119978-01",
+		"fecha" : "2025-11-16T04:09:55.417Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "wdesignmx@gmail.com",
+		"pedido" : "1576619121116-01",
+		"fecha" : "2025-11-16T05:28:44.147Z",
+		"comentarios" : "Laa autenticación con el código fallo varias veces",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "dannagf15@gmail.com",
+		"pedido" : "1576629121512-01",
+		"fecha" : "2025-11-16T05:59:52.410Z",
+		"comentarios" : "En dos ocasiones no me permitio hacer el pago por un problema con el pedido",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "maryc_sosa@hotmail.com",
+		"pedido" : "1576639122084-02",
+		"fecha" : "2025-11-16T07:29:53.220Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "yoboyalegre@yahoo.com.mx",
+		"pedido" : "1576739125737-01",
+		"fecha" : "2025-11-16T17:19:15.527Z",
+		"comentarios" : "No pude comprar dos promociones de 3*2 por que sus sistema marca como límite 5 productos.\nAdemás. no pude ingresar los datos de Mi Chedrahui",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "dakapo@hotmail.com",
+		"pedido" : "1576769128348-01",
+		"fecha" : "2025-11-16T19:43:13.590Z",
+		"comentarios" : "LA idea es muy buena, pero el sistema que usan y no lo es, deberian cambiar tienen muchos frameworks y muchas tecnologías que hacen que se sienta lento su sistema. ademas de que no se actualiza cuando debe al hacer los cambios en los formularios",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "marianakalicancun@hotmail.com",
+		"pedido" : "1576769128581-01",
+		"fecha" : "2025-11-16T19:49:04.470Z",
+		"comentarios" : "muy lento al cargar la plataforma, es un martirio buscar productos, compro los productos que ya se como se llaman ya no busco productos nuevos, muuy lentos.\nme rebotaron tres tarjetas diferentes.",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "pthierrym@yahoo.com.mx",
+		"pedido" : "1576779129583-01",
+		"fecha" : "2025-11-16T20:47:18.503Z",
+		"comentarios" : "bastante complicado hacer el pago, no me dejaba seleccionar la opcion en la web y en la app, ni siquiera me dejaba entrar a corregir el domicilio, ni sleccionarlo ni nada, desesperante!",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "luisenrique_viveros@hotmail.com",
+		"pedido" : "1576779130341-01",
+		"fecha" : "2025-11-16T21:28:15.050Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "melissa.huizar_260898@hotmail.com",
+		"pedido" : "1576789130906-01",
+		"fecha" : "2025-11-16T22:04:33.927Z",
+		"comentarios" : "Intenté hacer mi compra más de diez veces y siempre se trabó en check out. Hasta que al fin pude. ",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "suenmi.monserrat@gmail.com",
+		"pedido" : "1576789131259-01",
+		"fecha" : "2025-11-16T22:22:38.027Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "luciuts09@hotmail.com",
+		"pedido" : "1576799131663-01",
+		"fecha" : "2025-11-16T22:48:23.670Z",
+		"comentarios" : "Está muy lento y hay que estarlo reiniciando la página varias veces para que cargue bien y se registre",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "compean6666@gmail.com",
+		"pedido" : "1576809132449-01",
+		"fecha" : "2025-11-16T23:31:15.723Z",
+		"comentarios" : "Muchos problemas para el pago",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "merol.ra@gmail.com",
+		"pedido" : "1576809133202-01",
+		"fecha" : "2025-11-17T00:14:56.147Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "gabrielaqc@live.com.mx",
+		"pedido" : "1576819133625-01",
+		"fecha" : "2025-11-17T00:43:39.800Z",
+		"comentarios" : "No he podido realizar mi pedido, me lo cancelan",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "orlando_oscar@hotmail.com",
+		"pedido" : "1576829135053-01",
+		"fecha" : "2025-11-17T02:03:48.210Z",
+		"comentarios" : "Esta un tanto enredado. No podia pagarcon Monedero.",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "qfblinet@hotmail.com",
+		"pedido" : "1576829135356-01",
+		"fecha" : "2025-11-17T02:19:22.310Z",
+		"comentarios" : "No me permitió hacer el pago con mi tarjeta de vales, a pesar de haber ingresado correctamente todos los datos e intentarlo varias veces verificando la información.",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "isaiasgallardo618@gmail.com",
+		"pedido" : "1576859138482-01",
+		"fecha" : "2025-11-17T05:07:58.547Z",
+		"comentarios" : "Mala experiencia ya que al hacer el pago no permite especificar si se trata de tarjeta de crédito o de debito\nY en la opción de pago en plazos no me permitió elegir el plazo\nLo tuve que realizar en una sola exhibición",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "elisalegaspi@yahoo.com",
+		"pedido" : "1576879139831-01",
+		"fecha" : "2025-11-17T06:41:43.677Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "zairaruiz1009@gmail.com",
+		"pedido" : "1576929140626-01",
+		"fecha" : "2025-11-17T12:07:33.827Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "gaspar_eco@hotmail.com",
+		"pedido" : "1576979143490-01",
+		"fecha" : "2025-11-17T16:44:32.120Z",
+		"comentarios" : "No dejo pagar el pedido con tarjeta de debito ",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "apbatistag@yahoo.com.mx",
+		"pedido" : "1576989144599-01",
+		"fecha" : "2025-11-17T17:35:10.377Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "florian.weihmayer@gmx.de",
+		"pedido" : "1576999147265-01",
+		"fecha" : "2025-11-17T19:26:04.283Z",
+		"comentarios" : "No funciona con 2 diferente tarjetas de credito. en paga en linea",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "millita7373@hotmail.com",
+		"pedido" : "1577009148061-01",
+		"fecha" : "2025-11-17T19:57:34.673Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "millita7373@hotmail.com",
+		"pedido" : "1577009148354-01",
+		"fecha" : "2025-11-17T20:11:09.637Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "rmartinezherrera1@gmail.com",
+		"pedido" : "1577019149438-01",
+		"fecha" : "2025-11-17T21:00:24.950Z",
+		"comentarios" : "Todo regular, pero deben de mejorar la aplicación del celular porque tuve algunos mensajes de error al completar mi dirección de entrega y al intentar pagar no avanzaba de los datos personales y tuve que hacerlo en la laptop y eso deja mucho q desear",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "jcarloshr81@yahoo.com.mx",
+		"pedido" : "1577029151093-01",
+		"fecha" : "2025-11-17T22:07:26.693Z",
+		"comentarios" : "falta un poco mas de seguridad para evitar problemas en pagos y en iniciar sesion",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "malukiki2808@gmail.com",
+		"pedido" : "1577029151304-01",
+		"fecha" : "2025-11-17T22:13:45.477Z",
+		"comentarios" : "No me dejo pagar con tarjeta de débito ni de crédito , al querer utilizar el saldo de mi monedero tampoco lo descontó ",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "aalcarazpaz@gmail.com",
+		"pedido" : "1577039152216-01",
+		"fecha" : "2025-11-17T22:47:24.210Z",
+		"comentarios" : "no pude pagar con mi 1a opción, 5 veces recibi el mensaje de que tenían problemas de comunicación, Tuve que pagar con otra tarjeta y perdi el 15% de ventaja que tenia al usar la otra.",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "numerocuatrooo@gmail.com",
+		"pedido" : "1577049154765-01",
+		"fecha" : "2025-11-18T00:22:29.150Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "ragaing@hotmail.com",
+		"pedido" : "1577069157684-01",
+		"fecha" : "2025-11-18T02:02:14.533Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "t46nhkys9b@privaterelay.appleid.com",
+		"pedido" : "1577079159102-01",
+		"fecha" : "2025-11-18T02:47:29.467Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "almiux.lopez03@gmail.com",
+		"pedido" : "1577079159420-01",
+		"fecha" : "2025-11-18T02:57:47.737Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "eromealma@gmail.com",
+		"pedido" : "1577079159738-01",
+		"fecha" : "2025-11-18T03:06:39.747Z",
+		"comentarios" : "MARCA CONTINUAMENTE ERROR AL APLICAR EL PAGO CON TARJETA",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "andresrj@gmail.com",
+		"pedido" : "1577079160006-01",
+		"fecha" : "2025-11-18T03:17:26.963Z",
+		"comentarios" : "Queria pagar con mi tarjeta digital -por seguridad y por promociones- y su sistema marcaba \"error de dados\", tuve que poner mis datos de mi tarjeta fisica para que aceptara.",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "naujda095@gmail.com",
+		"pedido" : "1577089162482-01",
+		"fecha" : "2025-11-18T04:17:03.427Z",
+		"comentarios" : "La aplicación y la pagina no es fluida. Se traba mucho cuando se selecciona la opcion de aplicar el dinero del monedero chedraui, se traba, no se actualiza el total correctamente",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "luisvictoria25@hotmail.com",
+		"pedido" : "1577099163909-01",
+		"fecha" : "2025-11-18T04:47:44.053Z",
+		"comentarios" : "No pude realizar el pago con la tarjeta digital",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "satitogutti@gmail.com",
+		"pedido" : "1577099164609-01",
+		"fecha" : "2025-11-18T05:02:49.480Z",
+		"comentarios" : "Es un sitio que muestra demasiados problemas para hacer compras, de lo más lento, deberían mejorar en todos los sentidos ",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "brianrodriguezcifuentes@gmail.com",
+		"pedido" : "1577099165770-01",
+		"fecha" : "2025-11-18T05:29:06.403Z",
+		"comentarios" : "Muy mala página para poder registrar bien tu dirección, muy complicado y nada fácil de buscar tu dirección ",
+		"name" : "Precios y promociones"
+	},
+	{
+		"correo" : "daniel.lrosas@outlook.com",
+		"pedido" : "1577109166172-01",
+		"fecha" : "2025-11-18T05:38:00.770Z",
+		"comentarios" : "",
+		"name" : "Precios y promociones"
 	},
 	{
 		"correo" : "vemi05@hotmail.com",
@@ -610,67 +2080,235 @@
 		"name" : "Proceso de pago (Checkout)"
 	},
 	{
-		"correo" : "ibarraamerica83@gmail.com",
-		"pedido" : "1575319040084-01",
-		"fecha" : "2025-11-10T18:41:27.630Z",
-		"comentarios" : "Me gusta la aplicación pero casi no compro porque es demasiado lenta demasiado del 1 al 10 es un dos de rápida",
-		"name" : "Opciones de pago"
+		"correo" : "andresgonsalesnava@gmail.com",
+		"pedido" : "1575879063899-01",
+		"fecha" : "2025-11-13T02:47:37.733Z",
+		"comentarios" : "No pasó mi tarjeta ",
+		"name" : "Proceso de pago (Checkout)"
 	},
 	{
-		"correo" : "miguelortegamendoza@gmail.com",
-		"pedido" : "1575339041174-01",
-		"fecha" : "2025-11-10T20:49:37.900Z",
-		"comentarios" : "APP MUY LENTA Y MAL DISEÑO.",
-		"name" : "Opciones de pago"
+		"correo" : "gatuus@gmail.com",
+		"pedido" : "1575939067152-01",
+		"fecha" : "2025-11-13T09:30:55.490Z",
+		"comentarios" : "No es para nada intuitiva la interfaz, en especial al agregar la direccion, es horrendo, No tiene campos de calles, numero, colonia, etc.",
+		"name" : "Proceso de pago (Checkout)"
 	},
 	{
-		"correo" : "lainezharol@gmail.com",
-		"pedido" : "1575339041242-01",
-		"fecha" : "2025-11-10T20:54:45.760Z",
+		"correo" : "jg.lucas.h@gmail.com",
+		"pedido" : "1576029070053-01",
+		"fecha" : "2025-11-13T17:34:09.700Z",
+		"comentarios" : "No se autorizaba la compra ",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "justinbele216@gmail.com",
+		"pedido" : "1576039071080-01",
+		"fecha" : "2025-11-13T18:54:26.460Z",
+		"comentarios" : "Quise comprar con mi tarjeta de crédito. Jamás me Dejó ",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "efrainpsic@hotmail.com",
+		"pedido" : "1576079073875-01",
+		"fecha" : "2025-11-13T23:12:51.857Z",
+		"comentarios" : "Siempre que intento comprar debe hacer como 20 intentos y  me declina mi tarjeta y aunque al llamar al banco ellos me indican que el problema es que ustedes son quienes declinan el pago. Esto sucede siempre.",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "danielsilva.cdsg@gmail.com",
+		"pedido" : "1576099074758-01",
+		"fecha" : "2025-11-14T00:36:58.053Z",
+		"comentarios" : "No pongan a los becarios a programar lo del pago, que da muchos errores. pro favor y gracias",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "ponyoriginal@hotmail.com",
+		"pedido" : "1576099074747-01",
+		"fecha" : "2025-11-14T00:38:06.440Z",
+		"comentarios" : "BIEN",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "madel@luzme.com.mx",
+		"pedido" : "1576099074945-01",
+		"fecha" : "2025-11-14T00:54:01.363Z",
 		"comentarios" : "",
-		"name" : "Opciones de pago"
+		"name" : "Proceso de pago (Checkout)"
 	},
 	{
-		"correo" : "herreragemma1@gmail.com",
-		"pedido" : "1575339041525-01",
-		"fecha" : "2025-11-10T21:23:46.417Z",
-		"comentarios" : "La app no funciona ",
-		"name" : "Opciones de pago"
+		"correo" : "jcorona@chedraui.com.mx",
+		"pedido" : "1576269088683-01",
+		"fecha" : "2025-11-14T17:53:01.733Z",
+		"comentarios" : "No dejó pagar con tarjeta BBVA de Crédito digital",
+		"name" : "Proceso de pago (Checkout)"
 	},
 	{
-		"correo" : "sanvalbre15@gmail.com",
-		"pedido" : "1575349041857-01",
-		"fecha" : "2025-11-10T22:09:26.000Z",
-		"comentarios" : "Falta mas disponibilidad de productos ",
-		"name" : "Opciones de pago"
+		"correo" : "rnc_988@hotmail.com",
+		"pedido" : "1576269089602-01",
+		"fecha" : "2025-11-14T18:22:23.057Z",
+		"comentarios" : "se me hizo difícil poner la dirección ya que en mis datos no lo incluyen",
+		"name" : "Proceso de pago (Checkout)"
 	},
 	{
-		"correo" : "jahnke7206@gmail.com",
-		"pedido" : "1575349041655-01",
-		"fecha" : "2025-11-10T22:43:39.927Z",
-		"comentarios" : "Muy mal servicio",
-		"name" : "Opciones de pago"
+		"correo" : "laukracer@gmail.com",
+		"pedido" : "1576269089730-01",
+		"fecha" : "2025-11-14T18:25:22.103Z",
+		"comentarios" : "no me sale la opción de monedero Chedrahui",
+		"name" : "Proceso de pago (Checkout)"
 	},
 	{
-		"correo" : "pldodo@yahoo.com.mx",
-		"pedido" : "1575359042468-01",
-		"fecha" : "2025-11-10T23:25:51.067Z",
-		"comentarios" : "Deberían contemplar en el proceso que el usuario pueda regresar a añadir algún producto. Tuve que casi casi salirme y reingresar para añadir algo que estaba olvidando.",
-		"name" : "Opciones de pago"
-	},
-	{
-		"correo" : "bohigasluis@gmail.com",
-		"pedido" : "1575399044404-01",
-		"fecha" : "2025-11-11T03:28:15.383Z",
+		"correo" : "alexandra_isis@hotmail.com",
+		"pedido" : "1576269089877-01",
+		"fecha" : "2025-11-14T18:29:57.583Z",
 		"comentarios" : "",
-		"name" : "Opciones de pago"
+		"name" : "Proceso de pago (Checkout)"
 	},
 	{
-		"correo" : "amendozag_76@hotmail.com",
-		"pedido" : "1575429045898-01",
-		"fecha" : "2025-11-11T05:55:50.670Z",
-		"comentarios" : "Tardé más buscando los productos en línea que en la tienda física",
-		"name" : "Opciones de pago"
+		"correo" : "blink00leonel@gmail.com",
+		"pedido" : "1576279090423-01",
+		"fecha" : "2025-11-14T18:52:14.833Z",
+		"comentarios" : "El sitio no permite agregar formas de pago\nArroja error con las tarjetas de vales de despensa",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "alfredo.orueta@gmail.com",
+		"pedido" : "1576309094225-01",
+		"fecha" : "2025-11-14T21:36:59.753Z",
+		"comentarios" : "NO PERMITE HACER VARIAS COMPRAS A DIFERENTE DIRRECIONES",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "cucre@outlook.com",
+		"pedido" : "1576319096105-01",
+		"fecha" : "2025-11-14T22:44:52.377Z",
+		"comentarios" : "",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "lole_chikloz@hotmail.com",
+		"pedido" : "1576319096570-01",
+		"fecha" : "2025-11-14T23:48:13.737Z",
+		"comentarios" : "Pesimo que tengan disponible en pagina y al final me cancelen la compra.",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "fpantojav@prodigy.net.mx",
+		"pedido" : "1576359100926-01",
+		"fecha" : "2025-11-15T02:59:54.213Z",
+		"comentarios" : "guardar informacion de fomas de pago",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "charito_utrera@hotmail.com",
+		"pedido" : "1576359101286-01",
+		"fecha" : "2025-11-15T03:22:03.700Z",
+		"comentarios" : "NO PUDE UTILIZAR EL SALDO EN MI MONEDERO ELECTRONICO , PORQUE ESA OPCION NO ESTABA AL MOMENTO DE PAGAR",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "pedroi_9@hotmail.com",
+		"pedido" : "1576529112413-01",
+		"fecha" : "2025-11-15T20:20:54.227Z",
+		"comentarios" : "Muy mala experiencia, dos dias intentnado comprar y el portal no funciona, intente con diferentes tarjetas y ninguna pasa y en otros comercios sigo comprando sin problema, el chat no resuelve y via telefonica no pudeden procesar el pago con promocion",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "shadowt571@gmail.com",
+		"pedido" : "1576579116860-01",
+		"fecha" : "2025-11-16T00:50:07.330Z",
+		"comentarios" : "Me cancelaron el pedido sin razón aparente.",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "llla79@hotmail.com",
+		"pedido" : "1576589118119-01",
+		"fecha" : "2025-11-16T02:21:40.450Z",
+		"comentarios" : "No pude pagar con mis tarjetas de credito, solo me acepto pay pal",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "jimenezolguin024@hotmail.com",
+		"pedido" : "1576609119978-01",
+		"fecha" : "2025-11-16T04:09:55.417Z",
+		"comentarios" : "",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "dxn.izamal@gmail.com",
+		"pedido" : "1576659122375-01",
+		"fecha" : "2025-11-16T09:09:47.970Z",
+		"comentarios" : "Noto más difícil de manejar ahora la aplicación y hay productos que no encuentro en línea. Varias veces e tratado de comprar y no se concreta porque se cierra, no avanza o me exige pago antes de entregar. Ojalá puedan mejorar esto. Gracias ",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "marianakalicancun@hotmail.com",
+		"pedido" : "1576769128581-01",
+		"fecha" : "2025-11-16T19:49:04.470Z",
+		"comentarios" : "muy lento al cargar la plataforma, es un martirio buscar productos, compro los productos que ya se como se llaman ya no busco productos nuevos, muuy lentos.\nme rebotaron tres tarjetas diferentes.",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "gemaguadalupe.mendez@gmail.com",
+		"pedido" : "1576849137731-01",
+		"fecha" : "2025-11-17T04:22:28.990Z",
+		"comentarios" : "",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "isaiasgallardo618@gmail.com",
+		"pedido" : "1576859138482-01",
+		"fecha" : "2025-11-17T05:07:58.547Z",
+		"comentarios" : "Mala experiencia ya que al hacer el pago no permite especificar si se trata de tarjeta de crédito o de debito\nY en la opción de pago en plazos no me permitió elegir el plazo\nLo tuve que realizar en una sola exhibición",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "florian.weihmayer@gmx.de",
+		"pedido" : "1576999147265-01",
+		"fecha" : "2025-11-17T19:26:04.283Z",
+		"comentarios" : "No funciona con 2 diferente tarjetas de credito. en paga en linea",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "jcarloshr81@yahoo.com.mx",
+		"pedido" : "1577029151093-01",
+		"fecha" : "2025-11-17T22:07:26.693Z",
+		"comentarios" : "falta un poco mas de seguridad para evitar problemas en pagos y en iniciar sesion",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "juansaavedraesp@hotmail.com",
+		"pedido" : "1577039153403-01",
+		"fecha" : "2025-11-17T23:32:54.783Z",
+		"comentarios" : "No aceptan monedero electrónico en vinos y licores",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "paxman_4@hotmail.com",
+		"pedido" : "1577069157146-01",
+		"fecha" : "2025-11-18T01:45:56.477Z",
+		"comentarios" : "",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "mendieta_rr@yahoo.com",
+		"pedido" : "1577069157416-01",
+		"fecha" : "2025-11-18T01:53:20.160Z",
+		"comentarios" : "",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "wendo13051210@gmail.com",
+		"pedido" : "1577069158112-01",
+		"fecha" : "2025-11-18T02:16:12.913Z",
+		"comentarios" : "El costo de envío ",
+		"name" : "Proceso de pago (Checkout)"
+	},
+	{
+		"correo" : "irmatz27@gmail.com",
+		"pedido" : "1577089161916-01",
+		"fecha" : "2025-11-18T04:04:06.177Z",
+		"comentarios" : "Sugiero que si algún producto ya se agotó, ya no se muestre en las opciones de compra, pues es incómodo agregarlo al carrito y que resulte agotado.\nAsi también, deberían manejar más opciones de pago, por ejemplo Mercado Pago o tiendas de conveniencia",
+		"name" : "Proceso de pago (Checkout)"
 	},
 	{
 		"correo" : "gra2008@me.com",
@@ -824,6 +2462,755 @@
 		"pedido" : "1575859062725-01",
 		"fecha" : "2025-11-13T00:50:22.843Z",
 		"comentarios" : "Pésimo servicio para el pago, intgente pagar con 4 opciones disitntas y sólo permitio el pago contra entrega. \nBuscare otra opción de compra la próxima vez para mis productos.\n.Waltmart, Soriana, Comercial Mexicana",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "diegpe96@gmail.com",
+		"pedido" : "1575909065658-01",
+		"fecha" : "2025-11-13T05:31:00.890Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "gatuus@gmail.com",
+		"pedido" : "1575939067152-01",
+		"fecha" : "2025-11-13T09:30:55.490Z",
+		"comentarios" : "No es para nada intuitiva la interfaz, en especial al agregar la direccion, es horrendo, No tiene campos de calles, numero, colonia, etc.",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "emerson.maganac@gmail.com",
+		"pedido" : "1575979067405-01",
+		"fecha" : "2025-11-13T12:33:49.357Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "anyfavco13@gmail.com",
+		"pedido" : "1575989067803-01",
+		"fecha" : "2025-11-13T14:08:34.310Z",
+		"comentarios" : "La página es muy lenta \nLlevo años comprando con ustedes por línea \nY siguen sin arreglar ese problema ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "anyfavco13@gmail.com",
+		"pedido" : "1575989067803-01",
+		"fecha" : "2025-11-13T14:08:34.623Z",
+		"comentarios" : "La página es muy lenta \nLlevo años comprando con ustedes por línea \nY siguen sin arreglar ese problema ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "anyfavco13@gmail.com",
+		"pedido" : "1575989067803-01",
+		"fecha" : "2025-11-13T14:08:34.887Z",
+		"comentarios" : "La página es muy lenta \nLlevo años comprando con ustedes por línea \nY siguen sin arreglar ese problema ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "narciso_hurtado@hotmail.com",
+		"pedido" : "1576009068661-01",
+		"fecha" : "2025-11-13T15:41:29.657Z",
+		"comentarios" : "Muy lenta la app. Y no se actualiza mi domicilio...",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "belmar.p30@gmail.com",
+		"pedido" : "1576039071101-01",
+		"fecha" : "2025-11-13T18:56:51.313Z",
+		"comentarios" : "ME MARCO MUCHOS ERRORES EN EL COBRO A MI TARJETA TUVE QUE REPETIR EL PROCESO COMO 4 VECES. ADEMAS MUCHOS ERRORES PARA LOGEAR A MI CUENTA",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "humbertoheme@gmail.com",
+		"pedido" : "1576059072372-01",
+		"fecha" : "2025-11-13T20:53:02.773Z",
+		"comentarios" : "Terrible procesador de pagos. no pude pagar con ninguna tarjeta",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "blackghost0543@gmail.com",
+		"pedido" : "1576069072884-01",
+		"fecha" : "2025-11-13T21:47:45.250Z",
+		"comentarios" : "le falta optimización al sito",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "earguelles2012@gmail.com",
+		"pedido" : "1576079073379-01",
+		"fecha" : "2025-11-13T22:33:09.467Z",
+		"comentarios" : "Es súper lento y cada paso esperando que cargue la página es doloroso. El App es peor y casi nunca funciona ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "frluisp9@gmail.com",
+		"pedido" : "1576089074120-01",
+		"fecha" : "2025-11-13T23:31:29.537Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "frinevaldes@gmail.com",
+		"pedido" : "1576099074737-01",
+		"fecha" : "2025-11-14T00:37:13.113Z",
+		"comentarios" : "Desde la app no me deja hacer mis compras, la penúltima vez hice 3 veces el proceso y se hizo sin estar confirmado. La última vez me apareció igual y creí que se había hecho pero no. Tuve que prender la lap para poder hacer mi pedido. Muy mal servici",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "bluberd@hotmail.com",
+		"pedido" : "1576099075021-01",
+		"fecha" : "2025-11-14T01:02:00.590Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "chile.manuel1997@gmail.com",
+		"pedido" : "1576119076072-01",
+		"fecha" : "2025-11-14T03:00:53.467Z",
+		"comentarios" : "Es muy lento, pero funcional",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "odnanref456@gmail.com",
+		"pedido" : "1576139077127-01",
+		"fecha" : "2025-11-14T05:24:29.850Z",
+		"comentarios" : "Anterior mente e comprado en línea y aparecía mi dirección exacta y hoy no me permitió ingresarla, aunque estoy a una cuadra ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "marielazamora415@gmail.com",
+		"pedido" : "1576229082811-01",
+		"fecha" : "2025-11-14T14:23:59.510Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "ecc8410@gmail.com",
+		"pedido" : "1576249085057-01",
+		"fecha" : "2025-11-14T15:43:43.070Z",
+		"comentarios" : "Un poco lenta la aplicación ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "ibet.acerera7@gmail.com",
+		"pedido" : "1576249085414-01",
+		"fecha" : "2025-11-14T15:55:49.590Z",
+		"comentarios" : "Mejoro un poco que la aplicación es muy lenta ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "vara_mj@yahoo.com",
+		"pedido" : "1576249086253-01",
+		"fecha" : "2025-11-14T16:25:18.367Z",
+		"comentarios" : "No envían a mi domicilio.\nPiden muchos datos para realizar el pago.\nCuesta mucho definir una dirección predeterminada.\nNo me dan opciones de fechas suficientes para recoger en tienda.\nEn otras plataformas es mucho más fácil comprar en línea!",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "garciaguarneroseva@gmail.com",
+		"pedido" : "1576269089616-01",
+		"fecha" : "2025-11-14T18:21:01.583Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "blink00leonel@gmail.com",
+		"pedido" : "1576279090423-01",
+		"fecha" : "2025-11-14T18:52:14.833Z",
+		"comentarios" : "El sitio no permite agregar formas de pago\nArroja error con las tarjetas de vales de despensa",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "emiliodragonne@gmail.com",
+		"pedido" : "1576299092709-01",
+		"fecha" : "2025-11-14T20:39:17.450Z",
+		"comentarios" : "Me gusta mucho el servicio, los precios y la tienda, por desgracia, su servidor hace muy lento todo. Esto me ha obligado a comprar en Walmart cuando prefiero comprar en Chedraui.. hoy hice uso de mi paciencia por el bacalao que es el mejor",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "tom_my21@hotmail.com",
+		"pedido" : "1576299093348-01",
+		"fecha" : "2025-11-14T21:06:16.020Z",
+		"comentarios" : "ESTA UN POCO LENTA LA PAGINA",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "lcp.jcflores@hotmail.com",
+		"pedido" : "1576309094493-01",
+		"fecha" : "2025-11-14T21:45:16.087Z",
+		"comentarios" : "ESTAN BIEN LOS PRECIOS PERO LA APP ESTA DEMASIADO LENTA ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "5ggb6vx7k6@privaterelay.appleid.com",
+		"pedido" : "1576309094782-01",
+		"fecha" : "2025-11-14T21:55:24.057Z",
+		"comentarios" : "El sitio es muy lento, muy complicado ingresar el domicilio y\/o direccion de entrega ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "chris_torres_95@hotmail.com",
+		"pedido" : "1576309095272-01",
+		"fecha" : "2025-11-14T22:14:21.793Z",
+		"comentarios" : "Tuve que hacer más de 7 intentos para poder pagar ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "emyola@hotmail.com",
+		"pedido" : "1576319095770-01",
+		"fecha" : "2025-11-14T22:31:46.123Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "pacomagos@hotmail.com",
+		"pedido" : "1576309095725-01",
+		"fecha" : "2025-11-14T22:32:05.957Z",
+		"comentarios" : "Extremadamente lento el sitio, se supone que uno lo usa para mayor ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "flores.anabella@gmail.com",
+		"pedido" : "1576319095803-01",
+		"fecha" : "2025-11-14T22:33:54.753Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "cucre@outlook.com",
+		"pedido" : "1576319096105-01",
+		"fecha" : "2025-11-14T22:44:52.377Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "lole_chikloz@hotmail.com",
+		"pedido" : "1576319096570-01",
+		"fecha" : "2025-11-14T23:48:13.737Z",
+		"comentarios" : "Pesimo que tengan disponible en pagina y al final me cancelen la compra.",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "janlovve@gmail.com",
+		"pedido" : "1576329097634-01",
+		"fecha" : "2025-11-14T23:57:40.727Z",
+		"comentarios" : "No carga los precios y es muy lenta, no se pueden hacer compras",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "graceloo31@gmail.com",
+		"pedido" : "1576329098135-01",
+		"fecha" : "2025-11-15T00:28:05.703Z",
+		"comentarios" : "Le puse otros datos de quién recibe y en los datos del pedido siguen apareciendo mis datos. \n",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "albertvimaz@gmail.com",
+		"pedido" : "1576339098562-01",
+		"fecha" : "2025-11-15T00:50:52.817Z",
+		"comentarios" : "Tanto el sitio en internet como la aplicación son muy lentos y hace muy tardado el proceso de compra y la búsqueda de productos.",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "jimenezolguin024@hotmail.com",
+		"pedido" : "1576339098632-01",
+		"fecha" : "2025-11-15T00:55:41.510Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "ricardobarreras@gmail.com",
+		"pedido" : "1576339099219-01",
+		"fecha" : "2025-11-15T01:27:43.523Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "fpantojav@prodigy.net.mx",
+		"pedido" : "1576359100926-01",
+		"fecha" : "2025-11-15T02:59:54.213Z",
+		"comentarios" : "guardar informacion de fomas de pago",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "torresdelvalle7@gmail.com",
+		"pedido" : "1576379103252-01",
+		"fecha" : "2025-11-15T05:22:41.687Z",
+		"comentarios" : "La app se traba y no te deja agregar al carrito, la plataforma es súper lenta y retrógrada.",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "vazquezmaricarmen620@gmail.com",
+		"pedido" : "1576379103337-01",
+		"fecha" : "2025-11-15T05:29:51.970Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "alejadelat935@gmail.com",
+		"pedido" : "1576479106080-01",
+		"fecha" : "2025-11-15T14:37:48.363Z",
+		"comentarios" : "Se traba mucho la página ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "osanfa@outlook.com",
+		"pedido" : "1576509109347-01",
+		"fecha" : "2025-11-15T17:33:43.460Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "miguel.angel.hsa@hotmail.com",
+		"pedido" : "1576519111259-01",
+		"fecha" : "2025-11-15T19:14:42.263Z",
+		"comentarios" : "No me deja poner exactamente la direccion, pongo una calle y me marca solo una aproximacion",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "alex_esqueda@live.com.mx",
+		"pedido" : "1576529112343-01",
+		"fecha" : "2025-11-15T20:16:44.627Z",
+		"comentarios" : "Todo bien en la aplicación web. Intenté realizarlo por la aplicación móvil pero no me dejó avanzar al momento de elegir el lugar para envío ni pago. Mala experiencia en aplicación móvil.",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "pedroi_9@hotmail.com",
+		"pedido" : "1576529112413-01",
+		"fecha" : "2025-11-15T20:20:54.227Z",
+		"comentarios" : "Muy mala experiencia, dos dias intentnado comprar y el portal no funciona, intente con diferentes tarjetas y ninguna pasa y en otros comercios sigo comprando sin problema, el chat no resuelve y via telefonica no pudeden procesar el pago con promocion",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "villarocio37@gmail.com",
+		"pedido" : "1576529112420-01",
+		"fecha" : "2025-11-15T20:22:07.953Z",
+		"comentarios" : "Daré más estrellas en cuanto llegue mis productos",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "cs.ivangarcia@gmail.com",
+		"pedido" : "1576539112732-01",
+		"fecha" : "2025-11-15T20:39:56.720Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "clausng09@gmail.com",
+		"pedido" : "1576549114108-01",
+		"fecha" : "2025-11-15T21:57:18.270Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "blue.messenger@hotmail.com",
+		"pedido" : "1576559114731-01",
+		"fecha" : "2025-11-15T22:36:58.717Z",
+		"comentarios" : "La pagina es demaciada lenta. Es muy dificil que la pagina encuentre el domicilio de entrega y no permite meter la direccion manualmente.",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "karenrivera57026@gmail.com",
+		"pedido" : "1576559114900-01",
+		"fecha" : "2025-11-15T22:45:09.053Z",
+		"comentarios" : "NO ME PERMITE CAMBIAR EL C.P.",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "carmina770304@outlook.com",
+		"pedido" : "1576369101745-01",
+		"fecha" : "2025-11-15T23:32:29.630Z",
+		"comentarios" : "Hice reporte por el precio de un producto y la inexistencia de otro que me ofrecían en ofertas para ti, y en lugar de resolverlo lo empeoraron, ya que cambiaron el horario de mi entrega y por necesitar mi pedido, cancele un compromiso.",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "andreslopez91882@gmail.com",
+		"pedido" : "1576599118650-01",
+		"fecha" : "2025-11-16T02:44:09.333Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "nora_mercedes@hotmail.com",
+		"pedido" : "1576599119249-01",
+		"fecha" : "2025-11-16T03:22:14.830Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "jimenezolguin024@hotmail.com",
+		"pedido" : "1576609119978-01",
+		"fecha" : "2025-11-16T04:09:55.417Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "dxn.izamal@gmail.com",
+		"pedido" : "1576659122375-01",
+		"fecha" : "2025-11-16T09:09:47.970Z",
+		"comentarios" : "Noto más difícil de manejar ahora la aplicación y hay productos que no encuentro en línea. Varias veces e tratado de comprar y no se concreta porque se cierra, no avanza o me exige pago antes de entregar. Ojalá puedan mejorar esto. Gracias ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "victoriahehu@outlook.com",
+		"pedido" : "1576729124416-01",
+		"fecha" : "2025-11-16T16:15:39.047Z",
+		"comentarios" : "Buena experiencia en portal; la cuestión de mails de confirmación del pedido y seguimiento; no muy buena. Poca aclaración de si el pedido sí se generó o no. ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "luna.pop.fat@hotmail.com",
+		"pedido" : "1576729124858-01",
+		"fecha" : "2025-11-16T16:23:47.063Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "jbfoto7@gmail.com",
+		"pedido" : "1576759127521-01",
+		"fecha" : "2025-11-16T18:50:30.120Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "jbfoto7@gmail.com",
+		"pedido" : "1576759127521-01",
+		"fecha" : "2025-11-16T18:50:35.417Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "emmanuel.carrera@elektra.com.mx",
+		"pedido" : "1576759128158-01",
+		"fecha" : "2025-11-16T19:24:08.900Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "dakapo@hotmail.com",
+		"pedido" : "1576769128348-01",
+		"fecha" : "2025-11-16T19:43:13.590Z",
+		"comentarios" : "LA idea es muy buena, pero el sistema que usan y no lo es, deberian cambiar tienen muchos frameworks y muchas tecnologías que hacen que se sienta lento su sistema. ademas de que no se actualiza cuando debe al hacer los cambios en los formularios",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "marianakalicancun@hotmail.com",
+		"pedido" : "1576769128581-01",
+		"fecha" : "2025-11-16T19:49:04.470Z",
+		"comentarios" : "muy lento al cargar la plataforma, es un martirio buscar productos, compro los productos que ya se como se llaman ya no busco productos nuevos, muuy lentos.\nme rebotaron tres tarjetas diferentes.",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "xavier.villalpando91@gmail.com",
+		"pedido" : "1576779129365-01",
+		"fecha" : "2025-11-16T20:34:23.163Z",
+		"comentarios" : "El sitio no deja cambiar dirección de entrega en el checkout como si escoger el super fuera mi problema y no sólo mala experiencia de usuario de Chedraui",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "luciuts09@hotmail.com",
+		"pedido" : "1576799131663-01",
+		"fecha" : "2025-11-16T22:48:23.670Z",
+		"comentarios" : "Está muy lento y hay que estarlo reiniciando la página varias veces para que cargue bien y se registre",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "salimaanimaloasis@gmail.com",
+		"pedido" : "1576809132480-01",
+		"fecha" : "2025-11-16T23:32:16.533Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "merol.ra@gmail.com",
+		"pedido" : "1576809133202-01",
+		"fecha" : "2025-11-17T00:14:56.147Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "mausandovalg00@gmail.com",
+		"pedido" : "1576829135206-01",
+		"fecha" : "2025-11-17T02:11:51.637Z",
+		"comentarios" : "se satura para la busqueda o seleccionar se siente muy pesado al escribir o seleccionar un producto en la página",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "oa62386@gmail.com",
+		"pedido" : "1576839135982-01",
+		"fecha" : "2025-11-17T02:50:01.653Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "gina907@yahoo.com",
+		"pedido" : "1576839136323-01",
+		"fecha" : "2025-11-17T03:08:00.687Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "anapcabrerah@hotmail.com",
+		"pedido" : "1576849137162-01",
+		"fecha" : "2025-11-17T03:58:38.310Z",
+		"comentarios" : "Buenas ofertas. No  hubo productos de importación que en walmart sí, aunque encontré mejores ofertas aquí. No me gusta que el periodo de tiempo de entrega sea tan amplio. me gustaría que fuera de 1 hora exacta  ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "lilianaprocopioadunas@gmail.com",
+		"pedido" : "1576849137425-01",
+		"fecha" : "2025-11-17T04:08:20.600Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "gemaguadalupe.mendez@gmail.com",
+		"pedido" : "1576849137731-01",
+		"fecha" : "2025-11-17T04:22:28.990Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "citla28a@gmail.com",
+		"pedido" : "1576859137958-01",
+		"fecha" : "2025-11-17T04:36:16.793Z",
+		"comentarios" : "Página extremadamente lenta",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "alejandra6661@gmail.com",
+		"pedido" : "1576869139497-01",
+		"fecha" : "2025-11-17T06:15:40.993Z",
+		"comentarios" : "Puse los datos que iba a recoger otra persona mi pedido y al final me salió que yo iba a recoger el pedido, no sé para que ponen la opción de que otra persona pueda recoger el pedido si al final no se puede, ojalá puedan solucionar ese problema.",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "noe.marin.gonz@gmail.com",
+		"pedido" : "1576949141381-01",
+		"fecha" : "2025-11-17T14:31:02.840Z",
+		"comentarios" : "trate de hacer la compra por la app, sin embargo al tratar de dar de alta mi direccion me marcaba errores, tuve que hacer la compra desde el sitio web",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "gamaelsc12@gmail.com",
+		"pedido" : "1576959141844-01",
+		"fecha" : "2025-11-17T15:09:49.003Z",
+		"comentarios" : "La aplicación es muy lenta y no tiene mucha interactividad ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "noezagalo@hotmail.com",
+		"pedido" : "1576979143436-01",
+		"fecha" : "2025-11-17T16:43:07.213Z",
+		"comentarios" : "La compra en el sitio es una tortura, tengo instalada la aplicación en mi cel y no pude hacer mi compra, tuve que ingresar por medio de mi computadora y todo mi carrito se borro, al agregar de nuevo mis productos uno estaba agotado, pesimo en verdad.",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "ahdhl2017@gmail.com",
+		"pedido" : "1576989144893-01",
+		"fecha" : "2025-11-17T17:49:30.927Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "enriquejbm@yahoo.de",
+		"pedido" : "1576989144940-01",
+		"fecha" : "2025-11-17T17:54:35.753Z",
+		"comentarios" : "Sitio fallando desde semanas. Tengo producto ya en el carrito y quiero aumentar la cantidad, no me lo permite; tuve que eliminar y agregar nuevamente especificando en ese paso la cantidad mayor a 1 que deseaba. También, me vació el carrito sin razón.",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "tlamaki@pm.me",
+		"pedido" : "1576999146696-01",
+		"fecha" : "2025-11-17T19:03:27.717Z",
+		"comentarios" : "en la lista de favoritos solo aparecen 50 productos, no importa si cambio de PC, arreglenlo por favor.",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "earguelles2012@gmail.com",
+		"pedido" : "1576999146878-01",
+		"fecha" : "2025-11-17T19:10:38.950Z",
+		"comentarios" : "Es sumamente lenta, la página",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "libeosa@hotmail.com",
+		"pedido" : "1577019149100-01",
+		"fecha" : "2025-11-17T20:42:49.577Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "victor.segura@tmm.com.mx",
+		"pedido" : "1577029150391-01",
+		"fecha" : "2025-11-17T21:34:18.990Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "jcarloshr81@yahoo.com.mx",
+		"pedido" : "1577029151093-01",
+		"fecha" : "2025-11-17T22:07:26.693Z",
+		"comentarios" : "falta un poco mas de seguridad para evitar problemas en pagos y en iniciar sesion",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "mariadelourdes867@gmail.com",
+		"pedido" : "1577039152198-01",
+		"fecha" : "2025-11-17T22:47:00.930Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "compraenlinea988@gmail.com",
+		"pedido" : "1577049153514-01",
+		"fecha" : "2025-11-17T23:41:55.020Z",
+		"comentarios" : "La aplicación no permite poner bien la dirección ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "mlgutierrezg@hotmail.com",
+		"pedido" : "1577049153979-01",
+		"fecha" : "2025-11-17T23:54:42.110Z",
+		"comentarios" : "NO ES MUY CLARA, CAMBIA LA DIRECCION DE ENVÌO Y NO HAY UNA GUÌA . . ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "oswald3108@gmail.com",
+		"pedido" : "1577059155603-01",
+		"fecha" : "2025-11-18T00:52:47.620Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "rosalba.agtz9@gmail.com",
+		"pedido" : "1577059155509-01",
+		"fecha" : "2025-11-18T00:54:44.377Z",
+		"comentarios" : "LA PÁGINA ESTÁ MUY LENTA Y TUVE QUE SER MUY PACIENTE PARA PERMANECER Y COMPRAR, EL PRECIO ERA MUY ATRACTIVO, POR ESO ESPERE. ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "mdza_dos@yahoo.com.mx",
+		"pedido" : "1577059155959-01",
+		"fecha" : "2025-11-18T01:08:57.537Z",
+		"comentarios" : "el portal estuvo demasiado lento, pero demasiado lento.\nel precio final de cada articulo no corresponde al 3x2",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "d28_8@hotmail.com",
+		"pedido" : "1577009147760-01",
+		"fecha" : "2025-11-18T01:12:04.700Z",
+		"comentarios" : "No me llegó mi pedido ya que el\nRepartidor se negó a seguir las instrucciones y me colgó y nunca llegó mi pedido ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "wendo13051210@gmail.com",
+		"pedido" : "1577069158112-01",
+		"fecha" : "2025-11-18T02:16:12.913Z",
+		"comentarios" : "El costo de envío ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "patycesm28@gmail.com",
+		"pedido" : "1577069158435-01",
+		"fecha" : "2025-11-18T02:29:10.350Z",
+		"comentarios" : "Hice una 1a compra y me.dio en no de la.mosma y después me llego un correo de que había sido cancelada y tuve que volver a generarla,con el temor de que se fuera a duplicar\n",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "javieralonsoibarra@gmail.com",
+		"pedido" : "1577079159190-01",
+		"fecha" : "2025-11-18T02:52:35.557Z",
+		"comentarios" : "La página y la aplicación están fallando mucho, a veces no me deja seleccionar los productos. Me encanta comprar en Chedraui pero han sido varias ocasiones que he optado por otras tiendas por lo dificil que se ha vuelto la app",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "almiux.lopez03@gmail.com",
+		"pedido" : "1577079159420-01",
+		"fecha" : "2025-11-18T02:57:47.737Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "a.marcelenocastillo@gmail.com",
+		"pedido" : "1577079160602-01",
+		"fecha" : "2025-11-18T03:29:53.287Z",
+		"comentarios" : "No encontraba la forma de agregar al carrito mi producto, tuve que descargar la app y en la búsqueda de producto no encontraba nada",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "cipconsultoria.pc@gmail.com",
+		"pedido" : "1577089161209-01",
+		"fecha" : "2025-11-18T03:44:48.543Z",
+		"comentarios" : "Es muy complicado para poner la dirección de entrega, te cambia todo o te pone mal el código postal.",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "irmatz27@gmail.com",
+		"pedido" : "1577089161916-01",
+		"fecha" : "2025-11-18T04:04:06.177Z",
+		"comentarios" : "Sugiero que si algún producto ya se agotó, ya no se muestre en las opciones de compra, pues es incómodo agregarlo al carrito y que resulte agotado.\nAsi también, deberían manejar más opciones de pago, por ejemplo Mercado Pago o tiendas de conveniencia",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "fabyeuni79@gmail.com",
+		"pedido" : "1577089162362-01",
+		"fecha" : "2025-11-18T04:13:34.807Z",
+		"comentarios" : "Dificultad para editar la dirección exacta.\nNo permite escribirla manual.",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "naujda095@gmail.com",
+		"pedido" : "1577089162482-01",
+		"fecha" : "2025-11-18T04:17:03.427Z",
+		"comentarios" : "La aplicación y la pagina no es fluida. Se traba mucho cuando se selecciona la opcion de aplicar el dinero del monedero chedraui, se traba, no se actualiza el total correctamente",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "sapsanaturista@gmail.com",
+		"pedido" : "1577099163679-01",
+		"fecha" : "2025-11-18T04:41:31.147Z",
+		"comentarios" : "Me aparecieron errores qué me dificultaron la compra",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "satitogutti@gmail.com",
+		"pedido" : "1577099164609-01",
+		"fecha" : "2025-11-18T05:02:49.480Z",
+		"comentarios" : "Es un sitio que muestra demasiados problemas para hacer compras, de lo más lento, deberían mejorar en todos los sentidos ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "brianrodriguezcifuentes@gmail.com",
+		"pedido" : "1577099165770-01",
+		"fecha" : "2025-11-18T05:29:06.403Z",
+		"comentarios" : "Muy mala página para poder registrar bien tu dirección, muy complicado y nada fácil de buscar tu dirección ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "daniel.lrosas@outlook.com",
+		"pedido" : "1577109166172-01",
+		"fecha" : "2025-11-18T05:38:00.770Z",
+		"comentarios" : "",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "b2rockarla@gmail.com",
+		"pedido" : "1577109166514-01",
+		"fecha" : "2025-11-18T05:46:18.880Z",
+		"comentarios" : "Muy lenta la página ",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "joanvdaniel01@hotmail.com",
+		"pedido" : "1577109166364-01",
+		"fecha" : "2025-11-18T05:47:38.280Z",
+		"comentarios" : "EN EL FOLLETO VIENE LA LAVASECADORA LG MOD.WD12VVC4S6S Y ES PURO CUENTO NO SE ENCONTRO, MUY MAL POR CHEDRAUI\n",
+		"name" : "Opciones de pago"
+	},
+	{
+		"correo" : "paulu2953@gmail.com",
+		"pedido" : "1577109166747-01",
+		"fecha" : "2025-11-18T05:51:45.217Z",
+		"comentarios" : "Tarda mucho el poder hacer el pedido",
 		"name" : "Opciones de pago"
 	}
 ]}
